@@ -7,25 +7,28 @@
         <result xml:space="preserve">
 
 
-you have been captured by the demon lord for who knows what purpose. your kingdoms valiant knights have made several attempts to rescue you but none have succeded. it's time to take matters into your own hands.
+you are a princess that has been captured by the demon lord for who knows what purpose. your kingdoms valiant knights have made several attempts to rescue you but none have succeded. it's time to take matters into your own hands.
 
 damsel in distress?
 An Interactive Fiction by Brycen Tanaka
-Release 1 / Serial number 170214 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170216 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 prison cell
-a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you.
+a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1601"></child>
             <child nodeId="node-1567"></child>
+            <child nodeId="node-3264"></child>
+            <child nodeId="node-3243"></child>
             <child nodeId="node-1573"></child>
             <child nodeId="node-1080"></child>
             <child nodeId="node-1005"></child>
             <child nodeId="node-1070"></child>
             <child nodeId="node-1431"></child>
             <child nodeId="node-1536"></child>
+            <child nodeId="node-3280"></child>
             <child nodeId="node-1089"></child>
             <child nodeId="node-1085"></child>
         </children>
@@ -123,10 +126,369 @@ a dank and musty prison cell. there isn't much to do but look at the scratches o
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1536">
+    <item nodeId="node-3280">
+        <command xml:space="preserve">talk to guard1</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3281"></child>
+        </children>
+    </item>
+    <item nodeId="node-3281">
         <command xml:space="preserve">talk to guard</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3282"></child>
+        </children>
+    </item>
+    <item nodeId="node-3282">
+        <command xml:space="preserve">talk guard</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3283"></child>
+        </children>
+    </item>
+    <item nodeId="node-3283">
+        <command xml:space="preserve">speak guard</command>
+        <result xml:space="preserve">(to the guard)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3296"></child>
+        </children>
+    </item>
+    <item nodeId="node-3296">
+        <command xml:space="preserve">ask about grilled cheese</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3297"></child>
+        </children>
+    </item>
+    <item nodeId="node-3297">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3298"></child>
+        </children>
+    </item>
+    <item nodeId="node-3298">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">"even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key" he says, almost jumping with joy
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3299"></child>
+        </children>
+    </item>
+    <item nodeId="node-3299">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">(with prison key)
+You unlock your cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3300"></child>
+        </children>
+    </item>
+    <item nodeId="node-3300">
+        <command xml:space="preserve">open dor</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3301"></child>
+        </children>
+    </item>
+    <item nodeId="node-3301">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open your cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3302"></child>
+        </children>
+    </item>
+    <item nodeId="node-3302">
+        <command xml:space="preserve">ask about grilled cheese</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3303"></child>
+        </children>
+    </item>
+    <item nodeId="node-3303">
+        <command xml:space="preserve">ask guard about grilles cheese</command>
+        <result xml:space="preserve">he doesn't seem comfortable talking about that. you should try changing the subject.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3304"></child>
+        </children>
+    </item>
+    <item nodeId="node-3304">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3305"></child>
+        </children>
+    </item>
+    <item nodeId="node-3305">
+        <command xml:space="preserve">to</command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3306"></child>
+        </children>
+    </item>
+    <item nodeId="node-3306">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">he goes quiet. you can see him sulking in the corner of the dungeon
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3322"></child>
+        </children>
+    </item>
+    <item nodeId="node-3322">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">That was a rhetorical question.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3323"></child>
+        </children>
+    </item>
+    <item nodeId="node-3323">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3324"></child>
+        </children>
+    </item>
+    <item nodeId="node-3324">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">he goes quiet. you can see him sulking in the corner of the dungeon
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3343"></child>
+        </children>
+    </item>
+    <item nodeId="node-3343">
+        <command xml:space="preserve">ask about sandwich</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3344"></child>
+        </children>
+    </item>
+    <item nodeId="node-3344">
+        <command xml:space="preserve">ask guard about sandwich</command>
+        <result xml:space="preserve">I just love sandwiches, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3345"></child>
+        </children>
+    </item>
+    <item nodeId="node-3345">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">he goes quiet. you can see him sulking in the corner of the dungeon
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3367"></child>
+        </children>
+    </item>
+    <item nodeId="node-3367">
+        <command xml:space="preserve">ask about grilled cheese</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3368"></child>
+        </children>
+    </item>
+    <item nodeId="node-3368">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3369"></child>
+        </children>
+    </item>
+    <item nodeId="node-3369">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">"even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key" he says, almost jumping with joy
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3370"></child>
+        </children>
+    </item>
+    <item nodeId="node-3370">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">That's already open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3371"></child>
+        </children>
+    </item>
+    <item nodeId="node-3371">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3372"></child>
+        </children>
+    </item>
+    <item nodeId="node-3372">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+warden's room
+what appears to be a typical office space. there is a desk piled high with papers and not much else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3373"></child>
+        </children>
+    </item>
+    <item nodeId="node-3373">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east hallway
+a plain hallway adorned with pictures connecting the prison to the rest of the castle. the armory is to the north and the warden's room is to the west
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3374"></child>
+        </children>
+    </item>
+    <item nodeId="node-3374">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+armory
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3404"></child>
+        </children>
+    </item>
+    <item nodeId="node-3404">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+courtyard
+a large open area in front of the throne room. you can see skelletons swinging their swords at wooden practice dummy. there is one still available if you'd like to practice too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3405"></child>
+        </children>
+    </item>
+    <item nodeId="node-3405">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+kitchen
+you can see several skelletons here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3406"></child>
+        </children>
+    </item>
+    <item nodeId="node-3406">
+        <command xml:space="preserve">talk to skelleton chef</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3439"></child>
+        </children>
+    </item>
+    <item nodeId="node-3439">
+        <command xml:space="preserve">talk skelleton chef</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3440"></child>
+        </children>
+    </item>
+    <item nodeId="node-3440">
+        <command xml:space="preserve">talking skelleton chef</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3441"></child>
+        </children>
+    </item>
+    <item nodeId="node-3441">
+        <command xml:space="preserve">swing key</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3442"></child>
+        </children>
+    </item>
+    <item nodeId="node-3442">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  prison key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3443"></child>
+        </children>
+    </item>
+    <item nodeId="node-3443">
+        <command xml:space="preserve">swing prison key</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3481"></child>
+        </children>
+    </item>
+    <item nodeId="node-3481">
+        <command xml:space="preserve">take chef</command>
+        <result xml:space="preserve">he doesn't seem willing to go with you.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3558"></child>
+        </children>
+    </item>
+    <item nodeId="node-3558">
+        <command xml:space="preserve">talk to skelleton chef</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3598"></child>
+        </children>
+    </item>
+    <item nodeId="node-3598">
+        <command xml:space="preserve">talk to chef</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1536">
+        <command xml:space="preserve">talk to guard</command>
+        <result xml:space="preserve">he seems bad at holding conversations. you should try asking about something me might get interested in to get the conversation going
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1554"></child>
@@ -647,6 +1009,213 @@ warden's room
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-3243">
+        <command xml:space="preserve">ask guard about l</command>
+        <result xml:space="preserve">he doesn't seem comfortable talking about that. you should try changing the subject.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3244"></child>
+        </children>
+    </item>
+    <item nodeId="node-3244">
+        <command xml:space="preserve">attack guard</command>
+        <result xml:space="preserve">you can't reach him from within your cell.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3247"></child>
+        </children>
+    </item>
+    <item nodeId="node-3247">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3248"></child>
+        </children>
+    </item>
+    <item nodeId="node-3248">
+        <command xml:space="preserve">ask guard about to</command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3249"></child>
+        </children>
+    </item>
+    <item nodeId="node-3249">
+        <command xml:space="preserve">ask guard about guard</command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3250"></child>
+        </children>
+    </item>
+    <item nodeId="node-3250">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3251"></child>
+        </children>
+    </item>
+    <item nodeId="node-3251">
+        <command xml:space="preserve">ask guard about cell</command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3252"></child>
+        </children>
+    </item>
+    <item nodeId="node-3252">
+        <command xml:space="preserve">ask guard about sandwiches</command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3253"></child>
+        </children>
+    </item>
+    <item nodeId="node-3253">
+        <command xml:space="preserve">ask guard about scratches</command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3263"></child>
+        </children>
+    </item>
+    <item nodeId="node-3263">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">"even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key" he says, almost jumping with joy
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3264">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3265"></child>
+        </children>
+    </item>
+    <item nodeId="node-3265">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">"even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key" he says, almost jumping with joy
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3266"></child>
+        </children>
+    </item>
+    <item nodeId="node-3266">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  prison key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3267"></child>
+        </children>
+    </item>
+    <item nodeId="node-3267">
+        <command xml:space="preserve">ask guard about guard</command>
+        <result xml:space="preserve">"i'm just your normal skelleton hired by the demon lord for some extra manpower." he says
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3268"></child>
+        </children>
+    </item>
+    <item nodeId="node-3268">
+        <command xml:space="preserve">ask guard about t</command>
+        <result xml:space="preserve">he doesn't seem comfortable talking about that. you should try changing the subject.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3269"></child>
+        </children>
+    </item>
+    <item nodeId="node-3269">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">(with prison key)
+You unlock your cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3270"></child>
+        </children>
+    </item>
+    <item nodeId="node-3270">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open your cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3271"></child>
+        </children>
+    </item>
+    <item nodeId="node-3271">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3272"></child>
+        </children>
+    </item>
+    <item nodeId="node-3272">
+        <command xml:space="preserve">ask guard about t</command>
+        <result xml:space="preserve">he doesn't seem comfortable talking about that. you should try changing the subject.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3273"></child>
+        </children>
+    </item>
+    <item nodeId="node-3273">
+        <command xml:space="preserve">ask guard about guard</command>
+        <result xml:space="preserve">"i'm just your normal skelleton hired by the demon lord for some extra manpower." he says
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3274"></child>
+        </children>
+    </item>
+    <item nodeId="node-3274">
+        <command xml:space="preserve">talk to guard</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3275"></child>
+        </children>
+    </item>
+    <item nodeId="node-3275">
+        <command xml:space="preserve">talki to guard</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3276"></child>
+        </children>
+    </item>
+    <item nodeId="node-3276">
+        <command xml:space="preserve">talk to guard</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3277"></child>
+        </children>
+    </item>
+    <item nodeId="node-3277">
+        <command xml:space="preserve">talking guard</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3278"></child>
+        </children>
+    </item>
+    <item nodeId="node-3278">
+        <command xml:space="preserve">talk guard</command>
+        <result xml:space="preserve">I only understood you as far as wanting to talk.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1567">
         <command xml:space="preserve">ask about sandwiches</command>
         <result xml:space="preserve">You can't see any such thing.
@@ -708,15 +1277,17 @@ warden's room
     </item>
     <item nodeId="node-1602">
         <command xml:space="preserve">ask guard about grilled cheese</command>
-        <result xml:space="preserve">I just love grilled cheese, how about you?
-</result>
+        <result xml:space="preserve">"he doesn't seem comfortable talking about that. you should try changing the subject.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1603"></child>
         </children>
     </item>
     <item nodeId="node-1603">
         <command xml:space="preserve">yes</command>
-        <result xml:space="preserve">even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key
+        <result xml:space="preserve">That was a rhetorical question.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1604"></child>
@@ -725,12 +1296,14 @@ warden's room
     </item>
     <item nodeId="node-2068">
         <command xml:space="preserve">unlock door</command>
-        <result xml:space="preserve">(with prison key)
-You unlock celldoor.
+        <result xml:space="preserve">(with your cell door)
+(first taking your cell door)
+That's hardly portable.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2069"></child>
+        <children><child nodeId="node-2365"></child>
+            <child nodeId="node-2069"></child>
         </children>
     </item>
     <item nodeId="node-2069">
@@ -858,6 +1431,305 @@ a dank and musty prison cell. there isn't much to do but look at the scratches o
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening celldoor)
 It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2365">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2366"></child>
+        </children>
+    </item>
+    <item nodeId="node-2366">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening your cell door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2367"></child>
+        </children>
+    </item>
+    <item nodeId="node-2367">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening your cell door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2382"></child>
+        </children>
+    </item>
+    <item nodeId="node-2382">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2383"></child>
+        </children>
+    </item>
+    <item nodeId="node-2383">
+        <command xml:space="preserve">x cell door</command>
+        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2411"></child>
+        </children>
+    </item>
+    <item nodeId="node-2411">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2412"></child>
+        </children>
+    </item>
+    <item nodeId="node-2412">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2413"></child>
+        </children>
+    </item>
+    <item nodeId="node-2413">
+        <command xml:space="preserve">x papers</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2414"></child>
+        </children>
+    </item>
+    <item nodeId="node-2414">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2415"></child>
+        </children>
+    </item>
+    <item nodeId="node-2415">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2416"></child>
+        </children>
+    </item>
+    <item nodeId="node-2416">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2417"></child>
+        </children>
+    </item>
+    <item nodeId="node-2417">
+        <command xml:space="preserve">x cell door</command>
+        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2418"></child>
+        </children>
+    </item>
+    <item nodeId="node-2418">
+        <command xml:space="preserve">norberts door</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2879"></child>
+        </children>
+    </item>
+    <item nodeId="node-2879">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2934"></child>
+        </children>
+    </item>
+    <item nodeId="node-2934">
+        <command xml:space="preserve">x picture</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2973"></child>
+        </children>
+    </item>
+    <item nodeId="node-2973">
+        <command xml:space="preserve">take picture</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2974"></child>
+        </children>
+    </item>
+    <item nodeId="node-2974">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening your cell door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2975"></child>
+        </children>
+    </item>
+    <item nodeId="node-2975">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3020"></child>
+        </children>
+    </item>
+    <item nodeId="node-3020">
+        <command xml:space="preserve">x picture</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3021"></child>
+        </children>
+    </item>
+    <item nodeId="node-3021">
+        <command xml:space="preserve">x pictures</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3070"></child>
+        </children>
+    </item>
+    <item nodeId="node-3070">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3071"></child>
+        </children>
+    </item>
+    <item nodeId="node-3071">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3072"></child>
+        </children>
+    </item>
+    <item nodeId="node-3072">
+        <command xml:space="preserve">x pictures</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3100"></child>
+        </children>
+    </item>
+    <item nodeId="node-3100">
+        <command xml:space="preserve">smell</command>
+        <result xml:space="preserve">You smell nothing unexpected.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3129"></child>
+        </children>
+    </item>
+    <item nodeId="node-3129">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening your cell door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3130"></child>
+        </children>
+    </item>
+    <item nodeId="node-3130">
+        <command xml:space="preserve">x pictures</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3131"></child>
+        </children>
+    </item>
+    <item nodeId="node-3131">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3132"></child>
+        </children>
+    </item>
+    <item nodeId="node-3132">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3133"></child>
+        </children>
+    </item>
+    <item nodeId="node-3133">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3134"></child>
+        </children>
+    </item>
+    <item nodeId="node-3134">
+        <command xml:space="preserve">open cabinet</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3203"></child>
+        </children>
+    </item>
+    <item nodeId="node-3203">
+        <command xml:space="preserve">close cabinet</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3204"></child>
+        </children>
+    </item>
+    <item nodeId="node-3204">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3205"></child>
+        </children>
+    </item>
+    <item nodeId="node-3205">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">There are none at all available!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
