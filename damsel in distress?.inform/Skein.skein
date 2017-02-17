@@ -11,7 +11,7 @@ you are a princess that has been captured by the demon lord for who knows what p
 
 damsel in distress?
 An Interactive Fiction by Brycen Tanaka
-Release 1 / Serial number 170216 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170217 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 prison cell
 a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east
@@ -488,10 +488,11 @@ you can see several skelletons here, all making sandwiches. they must really lik
     </item>
     <item nodeId="node-1536">
         <command xml:space="preserve">talk to guard</command>
-        <result xml:space="preserve">he seems bad at holding conversations. you should try asking about something me might get interested in to get the conversation going
+        <result xml:space="preserve">he seems bad at holding conversations. you should try asking about something he might be interested in to get the conversation going
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1554"></child>
+        <children><child nodeId="node-3605"></child>
+            <child nodeId="node-1554"></child>
             <child nodeId="node-1540"></child>
             <child nodeId="node-1537"></child>
             <child nodeId="node-1548"></child>
@@ -566,6 +567,202 @@ you can see several skelletons here, all making sandwiches. they must really lik
     <item nodeId="node-1555">
         <command xml:space="preserve">ask guard</command>
         <result xml:space="preserve">What do you want to ask guard1 for?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3605">
+        <command xml:space="preserve">ask about grilled cheese</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3606"></child>
+        </children>
+    </item>
+    <item nodeId="node-3606">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3607"></child>
+        </children>
+    </item>
+    <item nodeId="node-3607">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">"even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key" he says, almost jumping with joy
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3608"></child>
+        </children>
+    </item>
+    <item nodeId="node-3608">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">(with prison key)
+You unlock your cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3609"></child>
+        </children>
+    </item>
+    <item nodeId="node-3609">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open your cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3610"></child>
+        </children>
+    </item>
+    <item nodeId="node-3610">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3611"></child>
+        </children>
+    </item>
+    <item nodeId="node-3611">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3612"></child>
+        </children>
+    </item>
+    <item nodeId="node-3612">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+warden's room
+what appears to be a typical office space. there is a desk piled high with papers and not much else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3613"></child>
+        </children>
+    </item>
+    <item nodeId="node-3613">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east hallway
+a plain hallway adorned with pictures connecting the prison to the rest of the castle. the armory is to the north and the warden's room is to the west
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3614"></child>
+        </children>
+    </item>
+    <item nodeId="node-3614">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+armory
+The place where the monsters store their weapons. you can see an assortment of swords, spears, and axes. the courtyard is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3615"></child>
+        </children>
+    </item>
+    <item nodeId="node-3615">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+courtyard
+a large open area in front of the throne room. you can see kobolds swinging their swords at wooden practice dummy. there is one still available if you'd like to practice too. the throne room is to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3652"></child>
+        </children>
+    </item>
+    <item nodeId="node-3652">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+armory
+The place where the monsters store their weapons. you can see an assortment of swords, spears, and axes. the courtyard is to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3666"></child>
+        </children>
+    </item>
+    <item nodeId="node-3666">
+        <command xml:space="preserve">take</command>
+        <result xml:space="preserve">(prison key)
+You already have that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3667"></child>
+        </children>
+    </item>
+    <item nodeId="node-3667">
+        <command xml:space="preserve">take spear</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3668"></child>
+        </children>
+    </item>
+    <item nodeId="node-3668">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+courtyard
+a large open area in front of the throne room. you can see kobolds swinging their swords at wooden practice dummy. there is one still available if you'd like to practice too. the throne room is to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3669"></child>
+        </children>
+    </item>
+    <item nodeId="node-3669">
+        <command xml:space="preserve">give skelleton spear</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3738"></child>
+        </children>
+    </item>
+    <item nodeId="node-3738">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3865"></child>
+        </children>
+    </item>
+    <item nodeId="node-3865">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+kitchen
+you can see several ghosts here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3904"></child>
+        </children>
+    </item>
+    <item nodeId="node-3904">
+        <command xml:space="preserve">ask ghost chef for burger</command>
+        <result xml:space="preserve">Ghost chef has better things to do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3925"></child>
+        </children>
+    </item>
+    <item nodeId="node-3925">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  spear
+  prison key
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

@@ -127,15 +127,47 @@ instead of asking guard2 about "other prison", say "'He just shrugs and says, 'w
 
 instead of asking guard2 about "other prisoner", say "'He just shrugs and says, 'we have to keep our supply up, demon lords orders.'".
 
-after asking guard2 about something, say "he doesn't seem comfortable talking about that. you should try changing the subject."
+instead of asking guard2 about something, say "he doesn't seem comfortable talking about that. you should try changing the subject."
+
+instead of asking guard2 for norbert's key: say "'okay, here's the key' he says"; move norbert's key to player.
 
 [norbert's cell]
 
 norbertdoor is a door. norbertdoor is east of dungeon and west of norbert's cell. norbertdoor is scenery. norbertdoor is locked and closed. the printed name of norbertdoor is "the other cell door". understand "cell door" as norbertdoor. understand "cell" as norbertdoor. understand "norberts door" as norbertdoor. understand "norberts cell door" as norbertdoor. understand "norbert's door" as norbertdoor. understand "norbert's cell door" as norbertdoor. the description of norbertdoor is "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through. you can make out the vauge outline of someone, but he seems to be sleeping."
 
-norbert's cell is east of norbertdoor
+norbert's cell is east of norbertdoor. "this cell looks exactly the same as your cell, except without scratches and your cell didn't have what looks like a dirty monkey."
 
 norbert's key is in norbert's cell. norbert's key is undescribed. instead of examining norbert's key, say "an exact replica of the key to your cell, except it unlocks norberts cell."
+
+norbert is a man in norbert's cell. Norbert is undescribed. understand "prisoner" as norbert. understand "man" as norbert.
+
+instead of talking to norbert, say "he mumbles something unintelligible"
+
+instead of asking norbert about something, say "he mumbles something unintelligible"
+
+instead of asking norbert about "sandwiches", say "he mumbles something about burgers and delicious."
+
+instead of asking norbert about "grilled cheese", say "he mumbles something about grilled cheese being disgusting"
+
+instead of asking norbert about "peanut butter and jelly", say "he mumbles something about grilled cheese being disgusting"
+
+instead of asking norbert about "skelleton", say "he mumbles something about necromancy and vampires."
+
+instead of asking norbert about "guard", say "he mumbles something about lonely and dumb."
+
+instead of asking norbert about "chef", say "he mumbles something about tasty sandwiches"
+
+instead of asking norbert about "demon lord", say "he mumbles something about loving burgers and vampires" 
+
+instead of asking norbert about "meat": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+
+instead of asking norbert about "patty": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+
+instead of asking norbert about "sandwich filling": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+
+instead of asking norbert about "hamburger": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+
+instead of asking norbert about "burger": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
 
 [warden's room]
 
@@ -167,7 +199,7 @@ west hallway is west of warden's room. "a plain hallway connecting the prison to
 
 [kitchen]
 
-kitchen is north of west hallway. "you can see several skelletons here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east"
+kitchen is north of west hallway. "you can see several ghosts here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east"
 
 cabinet is in kitchen. cabinet is closed and openable. cabinet is undescribed. instead of examining cabinet, say "a large, but plain cabinet that holds the supplies needed to run this sandwich making operation."
 
@@ -185,46 +217,84 @@ peanut butter is inside cabinet. instead of examining peanut butter, say "great 
 
 jelly is inside cabinet. instead of examining jelly, say "great for making a sandwich"
 
-skelleton chef is a man in kitchen. skelleton chef is undescribed. understand "chef" as skelleton chef. understand "skelleton" as skelleton chef.
+ghost chef is a man in kitchen. ghost chef is undescribed. understand "chef" as ghost chef. understand "ghost" as ghost chef.
 
-instead of taking skelleton chef, say "he doesn't seem willing to go with you."
+instead of taking ghost chef, say "he doesn't seem willing to go with you."
 
-instead of attacking skelleton chef: say "as you flail about with your untrained body, you are swarmed by numerous gaurds and taken back to your cell.";
+instead of attacking ghost chef: say "as you flail about with your untrained body, you are swarmed by numerous gaurds and taken back to your cell.";
 move player to prison cell; now celldoor is locked; now celldoor is closed; move prisonkey to dungeon
 
-instead of talking to skelleton chef, say "he listens to what you have to say, then turns back to his work."
+instead of talking to ghost chef, say "he listens to what you have to say, then turns back to his work."
 
-instead of asking skelleton chef about something, say "he listens to what you have to say, then turns back to his work."
+instead of asking ghost chef about something, say "he listens to what you have to say, then turns back to his work."
 
-instead of asking skelleton chef about "sandwiches", say "'i make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!' he responds"
+instead of asking ghost chef about "sandwiches", say "'i make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!' he responds"
 
-instead of asking skelleton chef about "sandwich", say "i make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!"
+instead of asking ghost chef about "sandwich", say "i make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!"
 
-instead of asking skelleton chef about "grilled cheese", say "'only that lonely guard actually likes grilled cheese. peanut butter and jelly sandwiches are the best.' he responds"
+instead of asking ghost chef about "grilled cheese", say "'only that lonely guard actually likes grilled cheese. peanut butter and jelly sandwiches are the best.' he responds"
 
-instead of asking skelleton chef about "peanut butter and jelly", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
+instead of asking ghost chef about "peanut butter and jelly", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
 
-instead of asking skelleton chef about "peanut butter and jelly sandwich", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
+instead of asking ghost chef about "peanut butter and jelly sandwich", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
 
-instead of asking skelleton chef about "peanut butter and jelly sandwiches", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
+instead of asking ghost chef about "peanut butter and jelly sandwiches", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
 
-instead of asking skelleton chef about "peanut butter jelly", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
+instead of asking ghost chef about "peanut butter jelly", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
+
+
+ghost chef is holding grilled cheese. grilled cheese is undescribed. instead of examining grilled cheese, say "your guards favorite sandwich. cheesey goodness between two slices of bread."
+
+ghost chef is holding pbandj. pbandj is undescribed. the printed name of pbandj is "peanut butter and jelly sandwich". understand "peanut butter and jelly" as pbandj. understand "pb and j" as pbandj. instead of examining pbandj, say "the ghost chefs favorite sandwich. goey filling between two slices of bread."
+
+ghost chef is holding burger. burger is undescribed. instead of examining burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+instead of asking ghost chef for burger:
+	if ghost chef is holding bread;
+	if ghost chef is holding burger patty:
+		move burger to player; 
+		say "'here you go buddy' he says"
+
 
 [courtyard]
 
-courtyard is east of kitchen. "a large open area in front of the throne room. you can see skelletons swinging their swords at wooden practice dummy. there is one still available if you'd like to practice too."
+courtyard is east of kitchen. "a large open area in front of the throne room. you can see kobolds swinging their swords at wooden practice dummy. there is one still available if you'd like to practice too. the throne room is to the north."
 
-dummy is in court yard. dummy is undescribed. understand "training dummy" as dummy. understand "wooden practice dummy" as dummy. understand "wooden training dummy" as dummy. understand "practice dummy" as dummy.
+dummy is in court yard. dummy is undescribed. understand "training dummy" as dummy. understand "wooden practice dummy" as dummy. understand "wooden training dummy" as dummy. understand "practice dummy" as dummy. instead of taking dummy, say "it's too heavy"
+
+warrior is a man in courtyard. understand "kobold" as warrior. warrior is undescribed. the printed name of warrior is "kobold".
+
+instead of asking warrior about something, say "they are all too focused to hear you." 
+
+instead of talking to warrior, say "they are all too focused to hear you." 
+
+instead of attacking warrior: say "as you flail about with your untrained body, you are swarmed by numerous gaurds and taken back to your cell.";
+move player to prison cell; now celldoor is locked; now celldoor is closed; move prisonkey to dungeon
+
+instead of attacking dummy, say "as you wack the dummy with your weapon of choice you hear someone saying 'level up!' from somewhere. you think nothing of it and continue on."
+
+guard3 is a man in courtyard. guard3 is undescribed. understand "guard" as guard3. the printed name of guard3 is "guard". understand "skeleton" as guard3
+
 
 [armory]
 
 armory is north of east hallway
 
-armory is east of courtyard
+armory is east of courtyard. "The place where the monsters store their weapons. you can see an assortment of swords, spears, and axes. the courtyard is to the west."
 
+sword is in armory. sword is undescribed. understand "swords" as sword. instead of examining sword, say "sharp and pointy. a well forged tool of war. if only you knew how to use it..."
+
+spear is in armory. spear is undescribed. understand "spears" as spear. instead of examining spear, say "sharp and pointy. a well forged tool of war. if only you knew how to use it..."
+
+ax is in armory. ax is undescribed. understand "axes" as ax. instead of examining ax, say "sharp and pointy. a well forged tool of war. if only you knew how to use it..."
 
 
 [throne room]
 
-throne room is north of courtyard
+royal door is north of courtyard and south of throne room. royal door is a door. understand "door" as royal door. royal door is closed. royal door is undescribed. instead of examining royal door, say "a majestic gate leading to the throne room. it's guarded by two skeletons."
+
+burger patty is in throne room. burger patty is undescribed. instead of examining burger patty, say "great for making a sandwich"
+
+
+
 
