@@ -92,6 +92,8 @@ The description of dungeon is "It is somehow even smellier here than inside your
 
 guard2 is in dungeon. guard2 is undescribed. understand "guard" as guard2. guard2 is a man in dungeon. the printed name of guard2 is "the guard"
 
+guard2 is holding norbert's key. norbert's key is undescribed. instead of examining norbert's key, say "an exact replica of the key to your cell, except it unlocks norberts cell."
+
 instead of taking guard2, say "he doesn't seem willing"
 
 instead of attacking guard2: say "despite the fact that he literally has no muscle, he manages to subdue you and put you back in your cell.";
@@ -121,23 +123,27 @@ instead of asking guard2 about "grilled cheese", say "'grilled cheese sandwiches
 
 instead of asking guard2 about "norbert", say "'yeah, that guy went crazy a while ago.' he responds"
 
-instead of asking guard2 about "other cell", say "'He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
+instead of asking guard2 about "other cell", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
 
-instead of asking guard2 about "other prison", say "'He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
+instead of asking guard2 about "other prison", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
 
-instead of asking guard2 about "other prisoner", say "'He just shrugs and says, 'we have to keep our supply up, demon lords orders.'".
+instead of asking guard2 about "other prisoner", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'".
 
 instead of asking guard2 about something, say "he doesn't seem comfortable talking about that. you should try changing the subject."
 
-instead of asking guard2 for norbert's key: say "'okay, here's the key' he says"; move norbert's key to player.
+instead of asking guard2 about "norbert's key", say "'i have it of course' he says"
+
+instead of asking guard2 for norbert's key: 
+	move norbert's key to player;
+	say "'okay, here's the key' he says"
+	
+
 
 [norbert's cell]
 
 norbertdoor is a door. norbertdoor is east of dungeon and west of norbert's cell. norbertdoor is scenery. norbertdoor is locked and closed. the printed name of norbertdoor is "the other cell door". understand "cell door" as norbertdoor. understand "cell" as norbertdoor. understand "norberts door" as norbertdoor. understand "norberts cell door" as norbertdoor. understand "norbert's door" as norbertdoor. understand "norbert's cell door" as norbertdoor. the description of norbertdoor is "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through. you can make out the vauge outline of someone, but he seems to be sleeping."
 
 norbert's cell is east of norbertdoor. "this cell looks exactly the same as your cell, except without scratches and your cell didn't have what looks like a dirty monkey."
-
-norbert's key is in norbert's cell. norbert's key is undescribed. instead of examining norbert's key, say "an exact replica of the key to your cell, except it unlocks norberts cell."
 
 norbert is a man in norbert's cell. Norbert is undescribed. understand "prisoner" as norbert. understand "man" as norbert.
 
@@ -205,8 +211,6 @@ cabinet is in kitchen. cabinet is closed and openable. cabinet is undescribed. i
 
 bread is inside cabinet. instead of examining bread, say "great for making a sandwich"
 
-ketchup is inside cabinet. instead of examining ketchup, say "great for making a sandwich"
-
 cheese is inside cabinet. instead of examining cheese, say "great for making a sandwich"
 
 lettuce is inside cabinet. instead of examining lettuce, say "great for making a sandwich"
@@ -217,7 +221,7 @@ peanut butter is inside cabinet. instead of examining peanut butter, say "great 
 
 jelly is inside cabinet. instead of examining jelly, say "great for making a sandwich"
 
-ghost chef is a man in kitchen. ghost chef is undescribed. understand "chef" as ghost chef. understand "ghost" as ghost chef.
+ghost chef is a man in kitchen. ghost chef is undescribed. understand "chef" as ghost chef. understand "ghost" as ghost chef. instead of examining ghost chef, say "a spectral chef. similar to how the skelletons somehow move without muscle, he inexpilcably makes sandwiches without physicalf form. "
 
 instead of taking ghost chef, say "he doesn't seem willing to go with you."
 
@@ -247,14 +251,89 @@ ghost chef is holding grilled cheese. grilled cheese is undescribed. instead of 
 
 ghost chef is holding pbandj. pbandj is undescribed. the printed name of pbandj is "peanut butter and jelly sandwich". understand "peanut butter and jelly" as pbandj. understand "pb and j" as pbandj. instead of examining pbandj, say "the ghost chefs favorite sandwich. goey filling between two slices of bread."
 
-ghost chef is holding burger. burger is undescribed. instead of examining burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+burger is in throne room. burger is undescribed. instead of examining burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+ghost chef is holding garlic burger. garlic burger is undescribed. instead of examining garlic burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+ghost chef is holding cheese burger. cheese burger is undescribed. instead of examining cheese burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+ghost chef is holding peanut butter burger. peanut butter burger is undescribed. instead of examining peanut butter burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+ghost chef is holding jelly burger. jelly burger is undescribed. instead of examining jelly burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+ghost chef is holding veggie burger. veggie burger is undescribed. instead of examining veggie burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+instead of giving bread to ghost chef:
+	move bread to ghost chef;
+	say "he takes your ingredient and gets back to work"
+	
+instead of giving peanut butter to ghost chef:
+	move peanut butter to ghost chef;
+	say "he takes your ingredient and gets back to work"
+
+instead of giving cheese to ghost chef:
+	move cheese to ghost chef;
+	say "he takes your ingredient and gets back to work"
+	
+instead of giving jelly to ghost chef:
+	move jelly to ghost chef;
+	say "he takes your ingredient and gets back to work"
+	
+instead of giving garlic to ghost chef:
+	move garlic to ghost chef;
+	say "he takes your ingredient and gets back to work"
+	
+instead of giving burger patty to ghost chef:
+	move burger patty to ghost chef;
+	say "he takes your ingredient and gets back to work"
+	
+instead of giving lettuce to ghost chef:
+	move lettuce to ghost chef;
+	say "he takes your ingredient and gets back to work"
 
 instead of asking ghost chef for burger:
-	if ghost chef is holding bread;
-	if ghost chef is holding burger patty:
-		move burger to player; 
-		say "'here you go buddy' he says"
+	if ghost chef is holding bread:
+		if ghost chef is holding burger patty:
+			move burger to player; 
+			say "'here you go buddy' he says. 'I can add more to that if you want. just give me back the burger first, then the rest of the ingredients.'"
 
+instead of asking ghost chef for pbandj:
+	if ghost chef is holding bread:
+		if ghost chef is holding peanut butter:
+			if ghost chef is holding jelly:
+				move pbandj to player; 
+				say "'here you go buddy' he says"
+				
+instead of asking ghost chef for grilled cheese:
+	if ghost chef is holding bread:
+		if ghost chef is holding cheese:
+			move grilled cheese to player; 
+			say "'here you go buddy' he says"
+			
+every turn:
+	if ghost chef is holding burger:
+		if ghost chef is holding garlic:
+			move garlic burger to player
+
+every turn:
+	if ghost chef is holding burger:
+		if ghost chef is holding cheese:
+			move cheese burger to player
+			
+every turn:
+	if ghost chef is holding burger:
+		if ghost chef is holding peanut butter:
+			move peanut butter burger to player
+			
+every turn:
+	if ghost chef is holding burger:
+		if ghost chef is holding jelly:
+			move jelly burger to player
+
+every turn:
+	if ghost chef is holding burger:
+		if ghost chef is holding lettuce:
+			move veggie burger to player
 
 [courtyard]
 
