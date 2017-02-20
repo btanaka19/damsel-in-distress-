@@ -325,7 +325,7 @@ instead of giving lettuce to ghost chef:
 	move lettuce to ghost chef;
 	say "he takes your ingredient and gets back to work"
 
-instead of asking ghost chef for hamburger:
+instead of asking ghost chef for burger:
 	if ghost chef is holding bread:
 		if ghost chef is holding hamburger patty:
 			move burger to player; 

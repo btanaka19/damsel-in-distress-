@@ -1600,7 +1600,9 @@ jelly: Taken.
     </item>
     <item nodeId="node-2005">
         <command xml:space="preserve">ask ghost chef for hamburger</command>
-        <result xml:space="preserve">&gt;</result>
+        <result xml:space="preserve">Ghost chef has better things to do.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2006"></child>
         </children>
@@ -1616,12 +1618,48 @@ jelly: Taken.
     </item>
     <item nodeId="node-2042">
         <command xml:space="preserve">ask ghost chef for hamburger</command>
-        <result xml:space="preserve">&gt;</result>
+        <result xml:space="preserve">Ghost chef has better things to do.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2043"></child>
         </children>
     </item>
     <item nodeId="node-2043">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  jelly
+  peanut butter
+  garlic
+  lettuce
+  cheese
+  norbert's key
+  prison key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2118"></child>
+        </children>
+    </item>
+    <item nodeId="node-2118">
+        <command xml:space="preserve">ask ghost chef for hamburger</command>
+        <result xml:space="preserve">Ghost chef has better things to do.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2119"></child>
+        </children>
+    </item>
+    <item nodeId="node-2119">
+        <command xml:space="preserve">ask ghost chef about hamburger</command>
+        <result xml:space="preserve">he listens to what you have to say, then turns back to his work.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2159"></child>
+        </children>
+    </item>
+    <item nodeId="node-2159">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying:
   jelly
