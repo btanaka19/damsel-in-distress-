@@ -50,7 +50,7 @@ instead of asking guard1 about "guard", say "'i'm just your normal skelleton hir
 
 instead of asking guard1 about "him", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard1 about "demon lord", say "'he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy.' he says"
+instead of asking guard1 about "demon lord", say "'he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you just talk to him he might let you go.' he says"
 
 instead of asking guard1 about "weather", say "'it's been sunny lately. no sign that's going to change either.' he says"
 
@@ -92,7 +92,7 @@ The description of dungeon is "It is somehow even smellier here than inside your
 
 guard2 is in dungeon. guard2 is undescribed. understand "guard" as guard2. guard2 is a man in dungeon. the printed name of guard2 is "the guard"
 
-guard2 is holding norbert's key. norbert's key is undescribed. instead of examining norbert's key, say "an exact replica of the key to your cell, except it unlocks norberts cell."
+guard2 is holding norbert's key. norbert's key unlocks norbertdoor. norbert's key is undescribed. instead of examining norbert's key, say "an exact replica of the key to your cell, except it unlocks norberts cell."
 
 instead of taking guard2, say "he doesn't seem willing"
 
@@ -105,7 +105,7 @@ instead of asking guard2 about "guard", say "'i'm just your normal skelleton hir
 
 instead of asking guard2 about "him", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard2 about "demon lord", say "he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy."
+instead of asking guard2 about "demon lord", say "'he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you talk to him he might just let you go.' he says"
 
 instead of asking guard2 about "weather", say "'it's been sunny lately. no sign that's going to change either.' he says"
 
@@ -149,15 +149,13 @@ norbert is a man in norbert's cell. Norbert is undescribed. understand "prisoner
 
 instead of talking to norbert, say "he mumbles something unintelligible"
 
-instead of asking norbert about something, say "he mumbles something unintelligible"
-
 instead of asking norbert about "sandwiches", say "he mumbles something about burgers and delicious."
 
 instead of asking norbert about "grilled cheese", say "he mumbles something about grilled cheese being disgusting"
 
 instead of asking norbert about "peanut butter and jelly", say "he mumbles something about grilled cheese being disgusting"
 
-instead of asking norbert about "skelleton", say "he mumbles something about necromancy and vampires."
+instead of asking norbert about "skelleton", say "he mumbles something about necromancy magic and vampires."
 
 instead of asking norbert about "guard", say "he mumbles something about lonely and dumb."
 
@@ -165,15 +163,29 @@ instead of asking norbert about "chef", say "he mumbles something about tasty sa
 
 instead of asking norbert about "demon lord", say "he mumbles something about loving burgers and vampires" 
 
-instead of asking norbert about "meat": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+instead of asking norbert about "escape", say "he mumbles something about no exit and the demon lord" 
 
-instead of asking norbert about "patty": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+instead of asking norbert about "exit", say "he mumbles something about no exit and the demon lord" 
 
-instead of asking norbert about "sandwich filling": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+instead of asking norbert about "way out", say "he mumbles something about no exit and the demon lord" 
 
-instead of asking norbert about "hamburger": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+instead of asking norbert about "magic", say "he mumbles something about the demon lord and powerful" 
 
-instead of asking norbert about "burger": say "he rolls over to show you a burger patty"; move burger patty to norbert's cell
+instead of asking norbert about "meat": say "he rolls over to show you a burger patty"; move hamburger patty to norbert's cell
+
+instead of asking norbert about "patty": say "he rolls over to show you a burger patty"; move hamburger patty to norbert's cell
+
+instead of asking norbert about "sandwich filling": say "he rolls over to show you a burger patty"; move hamburger patty to norbert's cell
+
+instead of asking norbert about "hamburger": say "he rolls over to show you a burger patty"; move hamburger patty to norbert's cell
+
+instead of asking norbert about "hamburgers": say "he rolls over to show you a burger patty"; move hamburger patty to norbert's cell
+
+instead of asking norbert about "burger": say "he rolls over to show you a burger patty"; move hamburger patty to norbert's cell
+
+instead of asking norbert about "burgers": say "he rolls over to show you a burger patty"; move hamburger patty to norbert's cell
+
+instead of asking norbert about something, say "he mumbles something unintelligible"
 
 [warden's room]
 
@@ -230,8 +242,6 @@ move player to prison cell; now celldoor is locked; now celldoor is closed; move
 
 instead of talking to ghost chef, say "he listens to what you have to say, then turns back to his work."
 
-instead of asking ghost chef about something, say "he listens to what you have to say, then turns back to his work."
-
 instead of asking ghost chef about "sandwiches", say "'i make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!' he responds"
 
 instead of asking ghost chef about "sandwich", say "i make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!"
@@ -247,21 +257,45 @@ instead of asking ghost chef about "peanut butter and jelly sandwiches", say "'a
 instead of asking ghost chef about "peanut butter jelly", say "'a taster sandwich will never exist. Peanut butter and jelly is simply the best' he responds"
 
 
+instead of asking ghost chef about something, say "he listens to what you have to say, then turns back to his work."
+
 ghost chef is holding grilled cheese. grilled cheese is undescribed. instead of examining grilled cheese, say "your guards favorite sandwich. cheesey goodness between two slices of bread."
 
 ghost chef is holding pbandj. pbandj is undescribed. the printed name of pbandj is "peanut butter and jelly sandwich". understand "peanut butter and jelly" as pbandj. understand "pb and j" as pbandj. instead of examining pbandj, say "the ghost chefs favorite sandwich. goey filling between two slices of bread."
 
-burger is in throne room. burger is undescribed. instead of examining burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+delicacy is a kind of thing. 
 
-ghost chef is holding garlic burger. garlic burger is undescribed. instead of examining garlic burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+ghost chef is holding hamburger. hamburger is a delicacy. hamburger is undescribed. instead of examining hamburger, say "a delicous fusion of meat, bread, and whatever else you put in here."
 
-ghost chef is holding cheese burger. cheese burger is undescribed. instead of examining cheese burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+ghost chef is holding garlic burger. garlic burger is a delicacy. garlic burger is undescribed. understand "burger" as garlic burger. instead of examining garlic burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
 
-ghost chef is holding peanut butter burger. peanut butter burger is undescribed. instead of examining peanut butter burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+every turn:
+	if garlic burger is held:
+		 now the printed name of garlic burger is "burger".
 
-ghost chef is holding jelly burger. jelly burger is undescribed. instead of examining jelly burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+ghost chef is holding cheese burger. cheese burger is a delicacy. cheese burger is undescribed. understand "burger" as garlic burger. instead of examining cheese burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
 
-ghost chef is holding veggie burger. veggie burger is undescribed. instead of examining veggie burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+every turn:
+	if cheese burger is held:
+		 now the printed name of cheese burger is "burger".
+
+ghost chef is holding peanut butter burger. peanut butter burger is a delicacy. peanut butter burger is undescribed. understand "burger" as peanut butter burger. instead of examining peanut butter burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+every turn:
+	if peanut butter burger is held:
+		 now the printed name of peanut butter burger is "burger".
+
+ghost chef is holding jelly burger. jelly burger is a delicacy. jelly burger is undescribed. instead of examining jelly burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+every turn:
+	if jelly burger is held:
+		 now the printed name of jelly burger is "burger".
+
+ghost chef is holding veggie burger. veggie burger is a delicacy. veggie burger is undescribed. instead of examining veggie burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+
+every turn:
+	if veggie burger is held:
+		 now the printed name of veggie burger is "burger".
 
 instead of giving bread to ghost chef:
 	move bread to ghost chef;
@@ -283,20 +317,20 @@ instead of giving garlic to ghost chef:
 	move garlic to ghost chef;
 	say "he takes your ingredient and gets back to work"
 	
-instead of giving burger patty to ghost chef:
-	move burger patty to ghost chef;
+instead of giving hamburger patty to ghost chef:
+	move hamburger patty to ghost chef;
 	say "he takes your ingredient and gets back to work"
 	
 instead of giving lettuce to ghost chef:
 	move lettuce to ghost chef;
 	say "he takes your ingredient and gets back to work"
 
-instead of asking ghost chef for burger:
+instead of asking ghost chef for hamburger:
 	if ghost chef is holding bread:
-		if ghost chef is holding burger patty:
+		if ghost chef is holding hamburger patty:
 			move burger to player; 
 			say "'here you go buddy' he says. 'I can add more to that if you want. just give me back the burger first, then the rest of the ingredients.'"
-
+			
 instead of asking ghost chef for pbandj:
 	if ghost chef is holding bread:
 		if ghost chef is holding peanut butter:
@@ -370,9 +404,19 @@ ax is in armory. ax is undescribed. understand "axes" as ax. instead of examinin
 
 [throne room]
 
-royal door is north of courtyard and south of throne room. royal door is a door. understand "door" as royal door. royal door is closed. royal door is undescribed. instead of examining royal door, say "a majestic gate leading to the throne room. it's guarded by two skeletons."
+royal door is north of courtyard and south of throne room. royal door is a door. understand "door" as royal door. royal door is closed. royal door is scenery. instead of examining royal door, say "a majestic gate leading to the throne room. it's guarded by two skeletons."
 
-burger patty is in throne room. burger patty is undescribed. instead of examining burger patty, say "great for making a sandwich"
+instead of opening royal door:
+	if delicacy is held:
+		now royal door is open;
+		say "woah, you have a burger!? the demon lord is going to want to see this. alright you can go in.";
+	if delicacy is not held:
+		say "you are stopped by the two guards. 'the demon lords a busy guy. you can't go in unless it's really important."
+
+hamburger patty is in throne room. hamburger patty is undescribed. instead of examining hamburger patty, say "great for making a sandwich"  
+
+
+
 
 
 
