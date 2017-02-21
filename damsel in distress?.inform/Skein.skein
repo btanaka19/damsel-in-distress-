@@ -7,11 +7,11 @@
         <result xml:space="preserve">
 
 
-you are a princess that has been captured by the demon lord for who knows what purpose. your kingdoms valiant knights have made several attempts to rescue you but none have succeded. it's time to take matters into your own hands.
+you are a princess that has been captured by the demon lord for who knows what purpose. your kingdom's valiant knights have made several attempts to rescue you but none have succeded. it's time to take matters into your own hands.
 
 damsel in distress?
 An Interactive Fiction by Brycen Tanaka
-Release 1 / Serial number 170220 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 prison cell
 a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east
@@ -31,6 +31,7 @@ a dank and musty prison cell. there isn't much to do but look at the scratches o
             <child nodeId="node-1084"></child>
             <child nodeId="node-1054"></child>
             <child nodeId="node-1014"></child>
+            <child nodeId="node-2524"></child>
             <child nodeId="node-1007"></child>
             <child nodeId="node-1003"></child>
         </children>
@@ -124,6 +125,13 @@ a dank and musty prison cell. there isn't much to do but look at the scratches o
     <item nodeId="node-1013">
         <command xml:space="preserve">ask guard about guard</command>
         <result xml:space="preserve">i'm just your normal skelleton hired by the demon lord for some extra manpower.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2524">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1155,7 +1163,72 @@ warden's room
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1126"></child>
+            <child nodeId="node-2565"></child>
         </children>
+    </item>
+    <item nodeId="node-2565">
+        <command xml:space="preserve">ask guard about grilled cheese</command>
+        <result xml:space="preserve">I just love grilled cheese, how about you?
+</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2566"></child>
+        </children>
+    </item>
+    <item nodeId="node-2566">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">"even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key" he says, almost jumping with joy
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2567"></child>
+        </children>
+    </item>
+    <item nodeId="node-2567">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">(with prison key)
+You unlock cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2568"></child>
+        </children>
+    </item>
+    <item nodeId="node-2568">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2569"></child>
+        </children>
+    </item>
+    <item nodeId="node-2569">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+west dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another nexit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2570"></child>
+        </children>
+    </item>
+    <item nodeId="node-2570">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another nexit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2571"></child>
+        </children>
+    </item>
+    <item nodeId="node-2571">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through. you can make out the vauge outline of someone, but he seems to be sleeping.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1126">
         <command xml:space="preserve"></command>
@@ -1318,8 +1391,7 @@ warden's room
     </item>
     <item nodeId="node-1976">
         <command xml:space="preserve">unlock door</command>
-        <result xml:space="preserve">(with prison key)
-You unlock your cell door.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1328,7 +1400,7 @@ You unlock your cell door.
     </item>
     <item nodeId="node-1977">
         <command xml:space="preserve">open door</command>
-        <result xml:space="preserve">You open your cell door.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1337,9 +1409,8 @@ You unlock your cell door.
     </item>
     <item nodeId="node-1978">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-dungeon
-It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
+        <result xml:space="preserve">(first opening door)
+It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1348,7 +1419,8 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1979">
         <command xml:space="preserve">ask guard for norbert's key</command>
-        <result xml:space="preserve">"okay, here's the key" he says
+        <result xml:space="preserve">You can't see any such thing.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1980"></child>
@@ -1356,7 +1428,8 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1980">
         <command xml:space="preserve">unlock other cell door</command>
-        <result xml:space="preserve">What do you want to unlock your cell door with?
+        <result xml:space="preserve">(with prison key)
+You unlock door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1365,7 +1438,8 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1981">
         <command xml:space="preserve">unlock other cell</command>
-        <result xml:space="preserve">What do you want to unlock your cell door with?
+        <result xml:space="preserve">(with prison key)
+That's unlocked at the moment.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1374,7 +1448,7 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1982">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">I didn't understand that sentence.
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1383,9 +1457,7 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1983">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-warden's room
-what appears to be a typical office space. there is a desk piled high with papers and not much else.
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1394,7 +1466,7 @@ what appears to be a typical office space. there is a desk piled high with paper
     </item>
     <item nodeId="node-1984">
         <command xml:space="preserve">x papers</command>
-        <result xml:space="preserve">looking through the reports, you notice that most of the people being held in the dungeon were eventually going to be used as filling for a sandwich and eaten. you were going to be used the same way, but there was someone else who was going to be used first. his name is norbert and he is still in the other cell.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1403,9 +1475,7 @@ what appears to be a typical office space. there is a desk piled high with paper
     </item>
     <item nodeId="node-1985">
         <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-dungeon
-It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1414,7 +1484,7 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1986">
         <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1423,7 +1493,7 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1987">
         <command xml:space="preserve">unlock norbert's door</command>
-        <result xml:space="preserve">What do you want to unlock norbert's cell door with?
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1432,7 +1502,7 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1988">
         <command xml:space="preserve">norbert's key</command>
-        <result xml:space="preserve">You unlock norbert's cell door.
+        <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1441,10 +1511,10 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1989">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening norbert's cell door)
+        <result xml:space="preserve">(first opening door)
 
-norbert's cell
-this cell looks exactly the same as your cell, except without scratches and your cell didn't have what looks like a dirty monkey.
+dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1453,7 +1523,8 @@ this cell looks exactly the same as your cell, except without scratches and your
     </item>
     <item nodeId="node-1990">
         <command xml:space="preserve">ask norbert about burgers</command>
-        <result xml:space="preserve">he rolls over to show you a burger patty
+        <result xml:space="preserve">You can't see any such thing.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1991"></child>
@@ -1461,8 +1532,8 @@ this cell looks exactly the same as your cell, except without scratches and your
     </item>
     <item nodeId="node-1991">
         <command xml:space="preserve">take</command>
-        <result xml:space="preserve">(norbert's cell door)
-That's hardly portable.
+        <result xml:space="preserve">(prison key)
+You already have that.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1480,7 +1551,8 @@ That's hardly portable.
     </item>
     <item nodeId="node-1993">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way.
+        <result xml:space="preserve">(first opening the other cell door)
+It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1499,8 +1571,8 @@ That's hardly portable.
     <item nodeId="node-1995">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
-dungeon
-It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
+prison cell
+a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1518,9 +1590,7 @@ It is somehow even smellier here than inside your cell. it turns out that the du
     </item>
     <item nodeId="node-1997">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-warden's room
-what appears to be a typical office space. there is a desk piled high with papers and not much else.
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1538,9 +1608,7 @@ what appears to be a typical office space. there is a desk piled high with paper
     </item>
     <item nodeId="node-1999">
         <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-west hallway
-a plain hallway connecting the prison to the rest of the castle. the kitchen is to the north and the warden's room is to the east
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1549,9 +1617,7 @@ a plain hallway connecting the prison to the rest of the castle. the kitchen is 
     </item>
     <item nodeId="node-2000">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-kitchen
-you can see several ghosts here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1560,7 +1626,7 @@ you can see several ghosts here, all making sandwiches. they must really like th
     </item>
     <item nodeId="node-2001">
         <command xml:space="preserve">open cabinet</command>
-        <result xml:space="preserve">You open cabinet, revealing bread, cheese, lettuce, garlic, peanut butter and jelly.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1569,12 +1635,7 @@ you can see several ghosts here, all making sandwiches. they must really like th
     </item>
     <item nodeId="node-2002">
         <command xml:space="preserve">take all</command>
-        <result xml:space="preserve">bread: Taken.
-cheese: Taken.
-lettuce: Taken.
-garlic: Taken.
-peanut butter: Taken.
-jelly: Taken.
+        <result xml:space="preserve">There are none at all available!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1583,7 +1644,7 @@ jelly: Taken.
     </item>
     <item nodeId="node-2003">
         <command xml:space="preserve">give burger to ghost chef</command>
-        <result xml:space="preserve">Which do you mean, garlic burger, cheese burger, peanut butter burger, jelly burger or veggie burger?
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1592,7 +1653,8 @@ jelly: Taken.
     </item>
     <item nodeId="node-2004">
         <command xml:space="preserve">give bread to ghost chef</command>
-        <result xml:space="preserve">he takes your ingredient and gets back to work
+        <result xml:space="preserve">You can't see any such thing.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-2005"></child>
@@ -1600,7 +1662,7 @@ jelly: Taken.
     </item>
     <item nodeId="node-2005">
         <command xml:space="preserve">ask ghost chef for hamburger</command>
-        <result xml:space="preserve">Ghost chef has better things to do.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1609,7 +1671,7 @@ jelly: Taken.
     </item>
     <item nodeId="node-2006">
         <command xml:space="preserve">ask ghost chef for burger</command>
-        <result xml:space="preserve">Which do you mean, garlic burger, cheese burger, peanut butter burger, jelly burger or veggie burger?
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1618,7 +1680,7 @@ jelly: Taken.
     </item>
     <item nodeId="node-2042">
         <command xml:space="preserve">ask ghost chef for hamburger</command>
-        <result xml:space="preserve">Ghost chef has better things to do.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1628,12 +1690,6 @@ jelly: Taken.
     <item nodeId="node-2043">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying:
-  jelly
-  peanut butter
-  garlic
-  lettuce
-  cheese
-  norbert's key
   prison key
 
 &gt;</result>
@@ -1643,7 +1699,7 @@ jelly: Taken.
     </item>
     <item nodeId="node-2118">
         <command xml:space="preserve">ask ghost chef for hamburger</command>
-        <result xml:space="preserve">Ghost chef has better things to do.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1652,7 +1708,7 @@ jelly: Taken.
     </item>
     <item nodeId="node-2119">
         <command xml:space="preserve">ask ghost chef about hamburger</command>
-        <result xml:space="preserve">he listens to what you have to say, then turns back to his work.
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1662,13 +1718,74 @@ jelly: Taken.
     <item nodeId="node-2159">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying:
-  jelly
-  peanut butter
-  garlic
-  lettuce
-  cheese
-  norbert's key
   prison key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2400"></child>
+        </children>
+    </item>
+    <item nodeId="node-2400">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2401"></child>
+        </children>
+    </item>
+    <item nodeId="node-2401">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+warden's room
+what appears to be a typical office space. there is a desk piled high with papers and not much else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2402"></child>
+        </children>
+    </item>
+    <item nodeId="node-2402">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west hallway
+a plain hallway connecting the prison to the rest of the castle. the kitchen is to the north and the warden's room is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2403"></child>
+        </children>
+    </item>
+    <item nodeId="node-2403">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+kitchen
+you can see several ghosts here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2404"></child>
+        </children>
+    </item>
+    <item nodeId="node-2404">
+        <command xml:space="preserve">open cabinet</command>
+        <result xml:space="preserve">You open cabinet, revealing bread, cheese, lettuce, garlic, peanut butter and jelly.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2405"></child>
+        </children>
+    </item>
+    <item nodeId="node-2405">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">bread: Taken.
+cheese: Taken.
+lettuce: Taken.
+garlic: Taken.
+peanut butter: Taken.
+jelly: Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1687,7 +1804,263 @@ jelly: Taken.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1144"></child>
+            <child nodeId="node-2527"></child>
+            <child nodeId="node-2408"></child>
         </children>
+    </item>
+    <item nodeId="node-2408">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2409"></child>
+        </children>
+    </item>
+    <item nodeId="node-2409">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2410"></child>
+        </children>
+    </item>
+    <item nodeId="node-2410">
+        <command xml:space="preserve">x your cell door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2411"></child>
+        </children>
+    </item>
+    <item nodeId="node-2411">
+        <command xml:space="preserve">x cell</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2442"></child>
+        </children>
+    </item>
+    <item nodeId="node-2442">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2443"></child>
+        </children>
+    </item>
+    <item nodeId="node-2443">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2444"></child>
+        </children>
+    </item>
+    <item nodeId="node-2444">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2445"></child>
+        </children>
+    </item>
+    <item nodeId="node-2445">
+        <command xml:space="preserve">x other door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2446"></child>
+        </children>
+    </item>
+    <item nodeId="node-2446">
+        <command xml:space="preserve">x norbert's door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2469"></child>
+        </children>
+    </item>
+    <item nodeId="node-2469">
+        <command xml:space="preserve">ask guard for key</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2470"></child>
+        </children>
+    </item>
+    <item nodeId="node-2470">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  prison key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2471"></child>
+        </children>
+    </item>
+    <item nodeId="node-2471">
+        <command xml:space="preserve">x norbert's door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2472"></child>
+        </children>
+    </item>
+    <item nodeId="node-2472">
+        <command xml:space="preserve">x other door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2473"></child>
+        </children>
+    </item>
+    <item nodeId="node-2473">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2474"></child>
+        </children>
+    </item>
+    <item nodeId="node-2474">
+        <command xml:space="preserve">x papers</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2475"></child>
+        </children>
+    </item>
+    <item nodeId="node-2475">
+        <command xml:space="preserve">x</command>
+        <result xml:space="preserve">(prison key)
+You see nothing special about prison key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2476"></child>
+        </children>
+    </item>
+    <item nodeId="node-2476">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2477"></child>
+        </children>
+    </item>
+    <item nodeId="node-2477">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2478"></child>
+        </children>
+    </item>
+    <item nodeId="node-2478">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2479"></child>
+        </children>
+    </item>
+    <item nodeId="node-2479">
+        <command xml:space="preserve">x other cell door</command>
+        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2527">
+        <command xml:space="preserve">unloc door</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2528"></child>
+        </children>
+    </item>
+    <item nodeId="node-2528">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2529"></child>
+        </children>
+    </item>
+    <item nodeId="node-2529">
+        <command xml:space="preserve">unlock cell door</command>
+        <result xml:space="preserve">(with prison key)
+You unlock cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2530"></child>
+        </children>
+    </item>
+    <item nodeId="node-2530">
+        <command xml:space="preserve">open cell door</command>
+        <result xml:space="preserve">You open cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2531"></child>
+        </children>
+    </item>
+    <item nodeId="node-2531">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+west dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another nexit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2532"></child>
+        </children>
+    </item>
+    <item nodeId="node-2532">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2541"></child>
+        </children>
+    </item>
+    <item nodeId="node-2541">
+        <command xml:space="preserve">x other door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2542"></child>
+        </children>
+    </item>
+    <item nodeId="node-2542">
+        <command xml:space="preserve">x other cell door</command>
+        <result xml:space="preserve">a set of iron bars. they aren't going to budge and there isn't enough room to squeze through.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1144">
         <command xml:space="preserve">i</command>

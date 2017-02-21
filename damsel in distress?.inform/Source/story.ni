@@ -9,19 +9,18 @@ To say exit list:
 		let place be the room way from the location; 
 		if place is a room, say " [way]". [from get that cat]
 		
-when play begins, say "you are a princess that has been captured by the demon lord for who knows what purpose. your kingdoms valiant knights have made several attempts to rescue you but none have succeded. it's time to take matters into your own hands."
+when play begins, say "you are a princess that has been captured by the demon lord for who knows what purpose. your kingdom's valiant knights have made several attempts to rescue you but none have succeded. it's time to take matters into your own hands."
 
 [prison cell]
 
 prison cell is a room. "a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east"
 
-celldoor is a door. celldoor is east of prison cell and west of dungeon. celldoor is locked. celldoor is scenery
+celldoor is a door. celldoor is east of prison cell and west of west dungeon. celldoor is locked. celldoor is scenery
 
-understand "cell door" as celldoor. understand "cell" as celldoor. instead of examining celldoor, say "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through." 
+understand "cell door" as celldoor. understand "cell door" as celldoor. understand "door" as celldoor. instead of examining celldoor, say "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through." 
 
-the printed name of celldoor is "your cell door"
 
-understand "door" as celldoor.
+the printed name of celldoor is "cell door"
 
 scratches are in prison cell. scratches is undescribed. understand "scratch" as scratches. 
 
@@ -33,7 +32,7 @@ guard1 is in prison cell. guard1 is undescribed. understand "guard" as guard1. g
 
 instead of switching on guard1, say "that isn't something you can do that to"
 
-instead of examining guard1, say "Your guard appears to be a skelleton. you can't actually tell if it can see with out eyes. or move without muscles. what you can tell is that he has the key you need to get out."
+instead of examining guard1, say "Your guard appears to be a skelleton. you can't actually tell if it can see with out eyes. or move without muscles. what you can tell is that he has the key you need to get out. the entire ring is just"
 
 instead of taking guard1, say "he doesn't seem willing"
 
@@ -88,7 +87,11 @@ prisonkey is in dungeon. prisonkey unlocks celldoor. prisonkey is undescribed.  
 
 [dungeon]
 
-The description of dungeon is "It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. 'what do you want to talk about, friend?' he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another exit to the north."
+The description of west dungeon is "It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. 'what do you want to talk about, friend?' he asks almost jumping with joy. your cell is to the west, and you are in front of the other cell."
+
+every turn:
+	if the player is in west dungeon:
+		now the printed name of celldoor is "your cell door"
 
 guard2 is in dungeon. guard2 is undescribed. understand "guard" as guard2. guard2 is a man in dungeon. the printed name of guard2 is "the guard"
 
@@ -138,10 +141,72 @@ instead of asking guard2 for norbert's key:
 	say "'okay, here's the key' he says"
 	
 
+east dungeon is east of west dungeon
+
+The description of east dungeon is "It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. 'what do you want to talk about, friend?' he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another nexit to the north."
+
+every turn:
+	if the player is in west dungeon:
+		now the printed name of celldoor is "your cell door"
+
+guard3 is in dungeon. guard3 is undescribed. understand "guard" as guard3. guard3 is a man in dungeon. the printed name of guard3 is "the guard"
+
+every turn:
+	if player is in east dungeon:
+		move norbert's key to guard3
+		
+every turn:
+	if player is in west dungeon:
+		move norbert's key to guard2
+
+instead of taking guard3, say "he doesn't seem willing"
+
+instead of attacking guard3: say "despite the fact that he literally has no muscle, he manages to subdue you and put you back in your cell.";
+	move player to prison cell; now celldoor is locked; now celldoor is closed; move prisonkey to 		dungeon
+	
+instead of talking to guard3, say "he seems bad at holding conversations. you should try asking about something he might be interested in to get the conversation going"
+
+instead of asking guard3 about "guard", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+
+instead of asking guard3 about "him", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+
+instead of asking guard3 about "demon lord", say "'he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you talk to him he might just let you go.' he says"
+
+instead of asking guard3 about "weather", say "'it's been sunny lately. no sign that's going to change either.' he says"
+
+instead of asking guard3 about "prison cell", say "'It's just part of being a demon lord i guess. You need a castle to be gloomy in and that castle needs a prison' he says"
+
+instead of asking guard3 about "cell", say "It's just part of being a demon lord i guess. You need a castle to be gloomy in and that castle needs a prison"
+
+instead of asking guard3 about "prison", say "'It's just part of being a demon lord i guess. You need a castle to be gloomy in and that castle needs a prison' he says"
+
+instead of asking guard3 about "sandwich", say "'sandwiches are just about everyone's favorite food around here. it's almost like a requirement to work for the demon lord.' he says"
+
+instead of asking guard3 about "sandwiches", say "'sandwiches are just about everyone around here's favorite food. it's almost like a requirement to work for the demon lord.' he responds"
+
+instead of asking guard3 about "grilled cheese", say "'grilled cheese sandwiches are simply wonderful. they're just so warm and gooey.' he responds"
+
+instead of asking guard3 about "norbert", say "'yeah, that guy went crazy a while ago.' he responds"
+
+instead of asking guard3 about "other cell", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
+
+instead of asking guard3 about "other prison", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
+
+instead of asking guard3 about "other prisoner", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'".
+
+instead of asking guard3 about something, say "he doesn't seem comfortable talking about that. you should try changing the subject."
+
+instead of asking guard3 about "norbert's key", say "'i have it of course' he says"
+
+instead of asking guard3 for norbert's key: 
+	move norbert's key to player;
+	say "'okay, here's the key' he says"
+	
+
 
 [norbert's cell]
 
-norbertdoor is a door. norbertdoor is east of dungeon and west of norbert's cell. norbertdoor is scenery. norbertdoor is locked and closed. the printed name of norbertdoor is "the other cell door". understand "cell door" as norbertdoor. understand "cell" as norbertdoor. understand "norberts door" as norbertdoor. understand "norberts cell door" as norbertdoor. understand "norbert's door" as norbertdoor. understand "norbert's cell door" as norbertdoor. the description of norbertdoor is "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through. you can make out the vauge outline of someone, but he seems to be sleeping."
+norbertdoor is a door. norbertdoor is east of east dungeon and west of norbert's cell. norbertdoor is scenery. norbertdoor is locked and closed. the printed name of norbertdoor is "the other cell door". understand "cell door" as norbertdoor. understand "cell" as norbertdoor. understand "norberts door" as norbertdoor. understand "norberts cell door" as norbertdoor. understand "norbert's door" as norbertdoor. understand "other cell door" as norbertdoor. understand "door" as norbertdoor. understand "other door" as norbertdoor. understand "norbert's cell door" as norbertdoor. the description of norbertdoor is "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through. you can make out the vauge outline of someone, but he seems to be sleeping."
 
 norbert's cell is east of norbertdoor. "this cell looks exactly the same as your cell, except without scratches and your cell didn't have what looks like a dirty monkey."
 
@@ -297,8 +362,8 @@ every turn:
 	if veggie burger is held:
 		 now the printed name of veggie burger is "burger".
 
-instead of giving bread to ghost chef:
-	move bread to ghost chef;
+after giving bread to ghost chef:
+	[move bread to ghost chef;]
 	say "he takes your ingredient and gets back to work"
 	
 instead of giving peanut butter to ghost chef:
@@ -317,8 +382,8 @@ instead of giving garlic to ghost chef:
 	move garlic to ghost chef;
 	say "he takes your ingredient and gets back to work"
 	
-instead of giving hamburger patty to ghost chef:
-	move hamburger patty to ghost chef;
+after giving hamburger patty to ghost chef:
+	[move hamburger patty to ghost chef;]
 	say "he takes your ingredient and gets back to work"
 	
 instead of giving lettuce to ghost chef:
@@ -386,7 +451,7 @@ move player to prison cell; now celldoor is locked; now celldoor is closed; move
 
 instead of attacking dummy, say "as you wack the dummy with your weapon of choice you hear someone saying 'level up!' from somewhere. you think nothing of it and continue on."
 
-guard3 is a man in courtyard. guard3 is undescribed. understand "guard" as guard3. the printed name of guard3 is "guard". understand "skeleton" as guard3
+sentry is a man in courtyard. sentry is undescribed. understand "guard" as sentry. the printed name of sentry is "guard". understand "skeleton" as sentry
 
 
 [armory]
