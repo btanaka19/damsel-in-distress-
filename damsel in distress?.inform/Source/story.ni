@@ -529,3 +529,38 @@ instead of asking demon lord about "escape":
 		end the story finally
 	
 instead of asking demon lord about something, say "as you try to approach the throne the demon lord shoots you a nasty glare. you choose to back away"
+
+[ask guard about grilled cheese
+yes
+unlock door
+open door
+e
+n
+w
+n
+open cabinet
+take all
+give bread to ghost chef
+give cheese to ghost chef
+s
+e
+s
+give grilled cheese to guard
+e
+unlock door
+open door
+ask norbert about meat
+take meat
+w
+w
+n
+w
+n
+take bread
+give bread to ghost chef
+give meat to ghost chef
+e
+n
+give  hamburger to demon lord
+ask demon lord about escape]
+

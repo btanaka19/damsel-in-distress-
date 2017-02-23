@@ -11,7 +11,7 @@ you are a princess that has been captured by the demon lord for who knows what p
 
 damsel in distress?
 An Interactive Fiction by Brycen Tanaka
-Release 1 / Serial number 170221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170223 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 prison cell
 a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east
@@ -3251,6 +3251,51 @@ a massive room embelished with banners and statues. Despite the size and grandeu
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4689"></child>
+        </children>
+    </item>
+    <item nodeId="node-4689">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">throne room
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4690"></child>
+        </children>
+    </item>
+    <item nodeId="node-4690">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4691"></child>
+        </children>
+    </item>
+    <item nodeId="node-4691">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">throne room
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4692"></child>
+        </children>
+    </item>
+    <item nodeId="node-4692">
+        <command xml:space="preserve">ask demon lord about escap</command>
+        <result xml:space="preserve">as you try to approach the throne the demon lord shoots you a nasty glare. you choose to back away
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4693"></child>
+        </children>
+    </item>
+    <item nodeId="node-4693">
+        <command xml:space="preserve">ask demon lord about esccape</command>
+        <result xml:space="preserve">as you try to approach the throne the demon lord shoots you a nasty glare. you choose to back away
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-2527">
         <command xml:space="preserve">unloc door</command>
@@ -4300,9 +4345,8 @@ That's hardly portable.
     </item>
     <item nodeId="node-1166">
         <command xml:space="preserve">unlock door</command>
-        <result xml:space="preserve">(with your cell door)
-(first taking your cell door)
-That's hardly portable.
+        <result xml:space="preserve">(with prison key)
+You unlock cell door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -4441,7 +4485,7 @@ It seems to be locked.
     </item>
     <item nodeId="node-1180">
         <command xml:space="preserve">open door</command>
-        <result xml:space="preserve">It seems to be locked.
+        <result xml:space="preserve">You open cell door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -4450,13 +4494,396 @@ It seems to be locked.
     </item>
     <item nodeId="node-1181">
         <command xml:space="preserve">e</command>
-        <result xml:space="preserve">(first opening your cell door)
-It seems to be locked.
+        <result xml:space="preserve">
+west dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, and you are in front of the other cell.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1182"></child>
+            <child nodeId="node-4700"></child>
         </children>
+    </item>
+    <item nodeId="node-4700">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+warden's room
+what appears to be a typical office space. there is a desk piled high with papers and not much else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4701"></child>
+        </children>
+    </item>
+    <item nodeId="node-4701">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west hallway
+a plain hallway connecting the prison to the rest of the castle. the kitchen is to the north and the warden's room is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4702"></child>
+        </children>
+    </item>
+    <item nodeId="node-4702">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+kitchen
+you can see several ghosts here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4703"></child>
+        </children>
+    </item>
+    <item nodeId="node-4703">
+        <command xml:space="preserve">open cabinet</command>
+        <result xml:space="preserve">You open cabinet, revealing bread, cheese, lettuce, garlic, peanut butter and jelly.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4704"></child>
+        </children>
+    </item>
+    <item nodeId="node-4704">
+        <command xml:space="preserve">take all</command>
+        <result xml:space="preserve">bread: Taken.
+cheese: Taken.
+lettuce: Taken.
+garlic: Taken.
+peanut butter: Taken.
+jelly: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4705"></child>
+        </children>
+    </item>
+    <item nodeId="node-4705">
+        <command xml:space="preserve">give bread to ghost</command>
+        <result xml:space="preserve">he takes your ingredient and gets back to work
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4706"></child>
+        </children>
+    </item>
+    <item nodeId="node-4706">
+        <command xml:space="preserve">give cheese to ghost</command>
+        <result xml:space="preserve">(cheese to ghost chef)
+he takes your ingredient and gets back to work
+"here you go buddy" he says
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4707"></child>
+        </children>
+    </item>
+    <item nodeId="node-4707">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  grilled cheese
+  jelly
+  peanut butter
+  garlic
+  lettuce
+  prison key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4708"></child>
+        </children>
+    </item>
+    <item nodeId="node-4708">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+west hallway
+a plain hallway connecting the prison to the rest of the castle. the kitchen is to the north and the warden's room is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4709"></child>
+        </children>
+    </item>
+    <item nodeId="node-4709">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+warden's room
+what appears to be a typical office space. there is a desk piled high with papers and not much else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4710"></child>
+        </children>
+    </item>
+    <item nodeId="node-4710">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+west dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, and you are in front of the other cell.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4711"></child>
+        </children>
+    </item>
+    <item nodeId="node-4711">
+        <command xml:space="preserve">give grilled cheese to guard</command>
+        <result xml:space="preserve">well, even if i lose my job it's worth it now. heres the key.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4712"></child>
+        </children>
+    </item>
+    <item nodeId="node-4712">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+east dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another nexit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4713"></child>
+        </children>
+    </item>
+    <item nodeId="node-4713">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the other cell door)
+It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4714"></child>
+        </children>
+    </item>
+    <item nodeId="node-4714">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">What do you want to unlock the other cell door with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4715"></child>
+        </children>
+    </item>
+    <item nodeId="node-4715">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4716"></child>
+        </children>
+    </item>
+    <item nodeId="node-4716">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">What do you want to unlock the other cell door with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4717"></child>
+        </children>
+    </item>
+    <item nodeId="node-4717">
+        <command xml:space="preserve">norbert's key</command>
+        <result xml:space="preserve">You unlock the other cell door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4718"></child>
+        </children>
+    </item>
+    <item nodeId="node-4718">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the other cell door)
+
+norbert's cell
+this cell looks exactly the same as your cell, except without scratches and your cell didn't have what looks like a dirty monkey.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4719"></child>
+        </children>
+    </item>
+    <item nodeId="node-4719">
+        <command xml:space="preserve">ask norbert about meat</command>
+        <result xml:space="preserve">he rolls over to show you a slab of meat. you also notice his unnaturally stumpy arm.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4720"></child>
+        </children>
+    </item>
+    <item nodeId="node-4720">
+        <command xml:space="preserve">take meat</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4721"></child>
+        </children>
+    </item>
+    <item nodeId="node-4721">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4722"></child>
+        </children>
+    </item>
+    <item nodeId="node-4722">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+east dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, the other cell is to the east, and there is another nexit to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4723"></child>
+        </children>
+    </item>
+    <item nodeId="node-4723">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west dungeon
+It is somehow even smellier here than inside your cell. it turns out that the dungeon is actually really small and plain. now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. "what do you want to talk about, friend?" he asks almost jumping with joy. your cell is to the west, and you are in front of the other cell.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4724"></child>
+        </children>
+    </item>
+    <item nodeId="node-4724">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+warden's room
+what appears to be a typical office space. there is a desk piled high with papers and not much else.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4725"></child>
+        </children>
+    </item>
+    <item nodeId="node-4725">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+west hallway
+a plain hallway connecting the prison to the rest of the castle. the kitchen is to the north and the warden's room is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4726"></child>
+        </children>
+    </item>
+    <item nodeId="node-4726">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+kitchen
+you can see several ghosts here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4727"></child>
+        </children>
+    </item>
+    <item nodeId="node-4727">
+        <command xml:space="preserve">give bread to ghost</command>
+        <result xml:space="preserve">(first taking bread)
+he takes your ingredient and gets back to work
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4728"></child>
+        </children>
+    </item>
+    <item nodeId="node-4728">
+        <command xml:space="preserve">give meat to ghost</command>
+        <result xml:space="preserve">he takes your ingredient and gets back to work
+"here you go buddy" he says. "I can add more to that if you want. just give me back the burger first, then the rest of the ingredients."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4729"></child>
+        </children>
+    </item>
+    <item nodeId="node-4729">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  hamburger
+  norbert's key
+  jelly
+  peanut butter
+  garlic
+  lettuce
+  prison key
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4730"></child>
+        </children>
+    </item>
+    <item nodeId="node-4730">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+courtyard
+a large open area in front of the throne room. you can see kobolds swinging their swords at wooden practice dummy. there is one still available if you'd like to practice too. the throne room is to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4731"></child>
+        </children>
+    </item>
+    <item nodeId="node-4731">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening royal door)
+woah, you have a burger!? the demon lord is going to want to see this. alright you can go in.
+
+throne room
+a massive room embelished with banners and statues. Despite the size and grandeur, the room seems rather empty. there is a huge throne on which a person who can only be the demon lord sits.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4732"></child>
+        </children>
+    </item>
+    <item nodeId="node-4732">
+        <command xml:space="preserve">give burger to demon lord</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4733"></child>
+        </children>
+    </item>
+    <item nodeId="node-4733">
+        <command xml:space="preserve">give  hamburger to demon lord</command>
+        <result xml:space="preserve">"human, this burger is delicious. you have earned the right to one single favor. what is it you desire?" he asks
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4734"></child>
+        </children>
+    </item>
+    <item nodeId="node-4734">
+        <command xml:space="preserve">ask about escape</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4735"></child>
+        </children>
+    </item>
+    <item nodeId="node-4735">
+        <command xml:space="preserve">ask demon lord about escape</command>
+        <result xml:space="preserve">"very well. i will allow you to return home." he says
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1182">
         <command xml:space="preserve">e</command>
