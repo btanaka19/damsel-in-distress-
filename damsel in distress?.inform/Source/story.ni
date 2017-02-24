@@ -9,7 +9,7 @@ To say exit list:
 		let place be the room way from the location; 
 		if place is a room, say " [way]". [from get that cat]
 		
-when play begins, say "you are a princess that has been captured by the demon lord for who knows what purpose. your kingdom's valiant knights have made several attempts to rescue you but none have succeded. it's time to take matters into your own hands."
+when play begins, say "you are a princess that has been captured by the demon lord for who knows what purpose. your kingdom's valiant knights have made several attempts to rescue you but none have succeeded. it's time to take matters into your own hands."
 
 [prison cell]
 
@@ -17,7 +17,7 @@ prison cell is a room. "a dank and musty prison cell. there isn't much to do but
 
 celldoor is a door. celldoor is east of prison cell and west of west dungeon. celldoor is locked. celldoor is scenery
 
-understand "cell door" as celldoor. understand "cell door" as celldoor. understand "door" as celldoor. instead of examining celldoor, say "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through." 
+understand "cell door" as celldoor. understand "cell door" as celldoor. understand "door" as celldoor. instead of examining celldoor, say "a set of iron bars. they aren't going to budge and there isn't enough room to squeeze through." 
 
 
 the printed name of celldoor is "cell door"
@@ -32,7 +32,7 @@ guard1 is in prison cell. guard1 is undescribed. understand "guard" as guard1. g
 
 instead of switching on guard1, say "that isn't something you can do that to"
 
-instead of examining guard1, say "Your guard appears to be a skelleton. you can't actually tell if it can see with out eyes. or move without muscles. what you can tell is that he has the key you need to get out. the entire ring is just"
+instead of examining guard1, say "Your guard appears to be a skeleton. you can't actually tell if it can see without eyes. or move without muscles. what you can tell is that he has the key you need to get out. the entire ring is just"
 
 instead of taking guard1, say "he doesn't seem willing"
 
@@ -45,11 +45,11 @@ talking to is an action applying to one visible thing. understand "talk to [some
 instead of talking to guard1:
 	 say "he seems bad at holding conversations. you should try asking about something he might be interested in to get the conversation going"
 
-instead of asking guard1 about "guard", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+instead of asking guard1 about "guard", say "'i'm just your normal skeleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard1 about "him", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+instead of asking guard1 about "him", say "'i'm just your normal skeleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard1 about "demon lord", say "'he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you just talk to him he might let you go.' he says"
+instead of asking guard1 about "demon lord", say "'he's not too bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you just talk to him he might let you go.' he says"
 
 instead of asking guard1 about "weather", say "'it's been sunny lately. no sign that's going to change either.' he says"
 
@@ -78,7 +78,7 @@ instead of asking guard1 about "sandwich":
 instead of asking guard1 about "grilled cheese":
 	say "I just love grilled cheese, how about you?";
 	if player consents: 
-		say "'even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. heres the key' he says, almost jumping with joy";
+		say "'even better than a fellow sandwich lover, a fellow grilled cheese lover! lets get you out of there so we can hold an actual conversation. here's the key' he says, almost jumping with joy";
 		move prisonkey to player;
 	otherwise: 
 		say "he goes quiet. you can see him sulking in the corner of the dungeon"
@@ -104,11 +104,11 @@ instead of attacking guard2: say "despite the fact that he literally has no musc
 	
 instead of talking to guard2, say "he seems bad at holding conversations. you should try asking about something he might be interested in to get the conversation going"
 
-instead of asking guard2 about "guard", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+instead of asking guard2 about "guard", say "'i'm just your normal skeleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard2 about "him", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+instead of asking guard2 about "him", say "'i'm just your normal skeleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard2 about "demon lord", say "'he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you talk to him he might just let you go.' he says"
+instead of asking guard2 about "demon lord", say "'he's not too bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you talk to him he might just let you go.' he says"
 
 instead of asking guard2 about "weather", say "'it's been sunny lately. no sign that's going to change either.' he says"
 
@@ -126,11 +126,11 @@ instead of asking guard2 about "grilled cheese", say "'grilled cheese sandwiches
 
 instead of asking guard2 about "norbert", say "'yeah, that guy went crazy a while ago.' he responds"
 
-instead of asking guard2 about "other cell", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
+instead of asking guard2 about "other cell", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"'
 
 instead of asking guard2 about "other prison", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
 
-instead of asking guard2 about "other prisoner", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'".
+instead of asking guard2 about "other prisoner", say "He just shrugs and says, 'we have to keep our supply up, demon lord's orders.'".
 
 instead of asking guard2 about something, say "he doesn't seem comfortable talking about that. you should try changing the subject."
 
@@ -147,7 +147,7 @@ every turn:
 	if guard2 is holding grilled cheese:
 		move grilled cheese to ghost chef;
 		move norbert's key to player;
-		say "well, even if i lose my job it's worth it now. heres the key."
+		say "well, even if i lose my job it's worth it now. here's the key."
 
 east dungeon is east of west dungeon
 
@@ -166,11 +166,11 @@ instead of attacking guard3: say "despite the fact that he literally has no musc
 	
 instead of talking to guard3, say "he seems bad at holding conversations. you should try asking about something he might be interested in to get the conversation going"
 
-instead of asking guard3 about "guard", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+instead of asking guard3 about "guard", say "'i'm just your normal skeleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard3 about "him", say "'i'm just your normal skelleton hired by the demon lord for some extra manpower.' he says"
+instead of asking guard3 about "him", say "'i'm just your normal skeleton hired by the demon lord for some extra manpower.' he says"
 
-instead of asking guard3 about "demon lord", say "'he's not to bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you talk to him he might just let you go.' he says"
+instead of asking guard3 about "demon lord", say "'he's not too bad actually. he might be dark and gloomy most of the time, but he loves sandwiches too, so he must be a good guy. if you talk to him he might just let you go.' he says"
 
 instead of asking guard3 about "weather", say "'it's been sunny lately. no sign that's going to change either.' he says"
 
@@ -203,7 +203,7 @@ instead of asking guard3 for norbert's key:
 	
 instead of giving grilled cheese to guard3:
 	move grilled cheese to guard3;
-	say "well, even if i lose my job it's worth it now. heres the key."
+	say "well, even if i lose my job it's worth it now. here's the key."
 	
 every turn:
 	if guard3 is holding grilled cheese:
@@ -213,7 +213,7 @@ every turn:
 	
 [norbert's cell]
 
-norbertdoor is a door. norbertdoor is east of east dungeon and west of norbert's cell. norbertdoor is scenery. norbertdoor is locked and closed. the printed name of norbertdoor is "the other cell door". understand "cell door" as norbertdoor. understand "cell" as norbertdoor. understand "norberts door" as norbertdoor. understand "norberts cell door" as norbertdoor. understand "norbert's door" as norbertdoor. understand "other cell door" as norbertdoor. understand "door" as norbertdoor. understand "other door" as norbertdoor. understand "norbert's cell door" as norbertdoor. the description of norbertdoor is "a set of iron bars. they aren't going to budge and there isn't enough room to squeze through. you can make out the vauge outline of someone, but he seems to be sleeping."
+norbertdoor is a door. norbertdoor is east of east dungeon and west of norbert's cell. norbertdoor is scenery. norbertdoor is locked and closed. the printed name of norbertdoor is "the other cell door". understand "cell door" as norbertdoor. understand "cell" as norbertdoor. understand "norberts door" as norbertdoor. understand "norberts cell door" as norbertdoor. understand "norbert's door" as norbertdoor. understand "other cell door" as norbertdoor. understand "door" as norbertdoor. understand "other door" as norbertdoor. understand "norbert's cell door" as norbertdoor. the description of norbertdoor is "a set of iron bars. they aren't going to budge and there isn't enough room to squeeze through. you can make out the vague outline of someone, but he seems to be sleeping."
 
 norbert's cell is east of norbertdoor. "this cell looks exactly the same as your cell, except without scratches and your cell didn't have what looks like a dirty monkey."
 
@@ -227,7 +227,7 @@ instead of asking norbert about "grilled cheese", say "he mumbles something abou
 
 instead of asking norbert about "peanut butter and jelly", say "he mumbles something about grilled cheese being disgusting"
 
-instead of asking norbert about "skelleton", say "he mumbles something about necromancy magic and vampires."
+instead of asking norbert about "skeleton", say "he mumbles something about necromancy magic and vampires."
 
 instead of asking norbert about "guard", say "he mumbles something about lonely and dumb."
 
@@ -253,7 +253,7 @@ instead of asking norbert about "hamburger": say "he rolls over to show you a sl
 
 instead of asking norbert about "hamburgers": say "he rolls over to show you a slab of meat. you also notice his unnaturally stumpy arm."; move meat to norbert's cell
 
-instead of asking norbert about "burger": say "hhe rolls over to show you a slab of meat. you also notice his unnaturally stumpy arm."; move meat to norbert's cell
+instead of asking norbert about "burger": say "he rolls over to show you a slab of meat. you also notice his unnaturally stumpy arm."; move meat to norbert's cell
 
 instead of asking norbert about "burgers": say "he rolls over to show you a slab of meat. you also notice his unnaturally stumpy arm."; move meat to norbert's cell
 
@@ -279,9 +279,9 @@ east hallway is east of warden's room. "a plain hallway adorned with pictures co
 
 pictures are in east hallway. pictures are undescribed. understand "picture" as pictures. understand "painting" as pictures. understand "paintings" as pictures. 
 
-instead of examining pictures, say "after talking to the guard, you were kind of expecting the paintings to be of sandwiches. they are actually normal portraits of a really pale man. you can find the occasional painting of a bat too."
+instead of examining pictures, say "after talking to the guard, you were kind of expecting the paintings to be of sandwiches. instead, they are actually normal portraits of a really pale man. you can find the occasional painting of a bat too."
 
-instead of taking pictures, say "it's too inconvienent to carry them."
+instead of taking pictures, say "it's too inconvenient  to carry them."
 
 [west hallway]
 
@@ -291,13 +291,11 @@ west hallway is west of warden's room. "a plain hallway connecting the prison to
 
 kitchen is north of west hallway. "you can see several ghosts here, all making sandwiches. they must really like their sandwiches. there is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east"
 
-cabinet is in kitchen. cabinet is closed and openable. cabinet is undescribed. instead of examining cabinet, say "a large, but plain cabinet that holds the supplies needed to run this sandwich making operation."
+cabinet is in kitchen. cabinet is closed and openable. cabinet is undescribed. instead of examining cabinet, say "a large, but plain cabinet that holds the supplies needed to run this sandwich making operation. there is a sign on it saying 'put supplies back when done'"
 
 bread is inside cabinet. instead of examining bread, say "great for making a sandwich"
 
 cheese is inside cabinet. instead of examining cheese, say "great for making a sandwich"
-
-lettuce is inside cabinet. instead of examining lettuce, say "great for making a sandwich"
 
 garlic is inside cabinet. instead of examining garlic, say "great for making a sandwich"
 
@@ -305,11 +303,11 @@ peanut butter is inside cabinet. instead of examining peanut butter, say "great 
 
 jelly is inside cabinet. instead of examining jelly, say "great for making a sandwich"
 
-ghost chef is a man in kitchen. ghost chef is undescribed. understand "chef" as ghost chef. understand "ghost" as ghost chef. instead of examining ghost chef, say "a spectral chef. similar to how the skelletons somehow move without muscle, he inexpilcably makes sandwiches without physicalf form. "
+ghost chef is a man in kitchen. ghost chef is undescribed. understand "chef" as ghost chef. understand "ghost" as ghost chef. instead of examining ghost chef, say "a spectral chef. similar to how the skeletons somehow move without muscle, he inexplicably makes sandwiches without physical form. "
 
 instead of taking ghost chef, say "he doesn't seem willing to go with you."
 
-instead of attacking ghost chef: say "as you flail about with your untrained body, you are swarmed by numerous gaurds and taken back to your cell.";
+instead of attacking ghost chef: say "as you flail about with your untrained body, you are swarmed by numerous guqrds and taken back to your cell.";
 move player to prison cell; now celldoor is locked; now celldoor is closed; move prisonkey to dungeon
 
 instead of talking to ghost chef, say "he listens to what you have to say, then turns back to his work."
@@ -331,26 +329,26 @@ instead of asking ghost chef about "peanut butter jelly", say "'a taster sandwic
 
 instead of asking ghost chef about something, say "he listens to what you have to say, then turns back to his work."
 
-ghost chef is holding grilled cheese. grilled cheese is undescribed. instead of examining grilled cheese, say "your guards favorite sandwich. cheesey goodness between two slices of bread."
+ghost chef is holding grilled cheese. grilled cheese is undescribed. instead of examining grilled cheese, say "your guards favorite sandwich. cheesy goodness between two slices of bread."
 
 ghost chef is holding pbandj. pbandj is undescribed. the printed name of pbandj is "peanut butter and jelly sandwich". understand "peanut butter and jelly" as pbandj. understand "pb and j" as pbandj. instead of examining pbandj, say "the ghost chefs favorite sandwich. goey filling between two slices of bread."
 
 delicacy is a kind of thing. 
 
 
-ghost chef is holding garlic burger. garlic burger is a delicacy. garlic burger is undescribed. understand "burger" as garlic burger. instead of examining garlic burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+ghost chef is holding garlic burger. garlic burger is a delicacy. garlic burger is undescribed. understand "burger" as garlic burger. instead of examining garlic burger, say "a delicious fusion of meat, bread, and whatever else you put in here."
 
 every turn:
 	if garlic burger is held:
 		 now the printed name of garlic burger is "burger".
 
-ghost chef is holding cheese burger. cheese burger is a delicacy. cheese burger is undescribed. understand "burger" as garlic burger. instead of examining cheese burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+ghost chef is holding cheese burger. cheese burger is a delicacy. cheese burger is undescribed. understand "burger" as garlic burger. instead of examining cheese burger, say "a delicious fusion of meat, bread, and whatever else you put in here."
 
 every turn:
 	if cheese burger is held:
 		 now the printed name of cheese burger is "burger".
 
-ghost chef is holding peanut butter burger. peanut butter burger is a delicacy. peanut butter burger is undescribed. understand "burger" as peanut butter burger. instead of examining peanut butter burger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+ghost chef is holding peanut butter burger. peanut butter burger is a delicacy. peanut butter burger is undescribed. understand "burger" as peanut butter burger. instead of examining peanut butter burger, say "a delicious fusion of meat, bread, and whatever else you put in here."
 
 every turn:
 	if peanut butter burger is held:
@@ -391,10 +389,6 @@ instead of giving garlic to ghost chef:
 instead of giving meat to ghost chef:
 	move meat to ghost chef;
 	say "he takes your ingredient and gets back to work"
-	
-instead of giving lettuce to ghost chef:
-	move lettuce to ghost chef;
-	say "he takes your ingredient and gets back to work"
 
 every turn:
 	if ghost chef is holding bread:
@@ -402,7 +396,7 @@ every turn:
 			move hamburger to player; 
 			move bread to cabinet;
 			move meat to norbert's cell;
-			say "'here you go buddy' he says. 'I can add more to that if you want. just give me back the burger first, then the rest of the ingredients.'"
+			say "'here's your burger buddy' he says. 'I can add more to that if you want. just give me back the burger first, then the rest of the ingredients.'"
 			
 every turn:
 	if ghost chef is holding bread:
@@ -412,7 +406,7 @@ every turn:
 				move peanut butter to cabinet;
 				move jelly to cabinet;
 				move bread to cabinet;
-				say "'here you go buddy' he says"
+				say "'here's your peanut butter jelly sandwich buddy' he says"
 				
 every turn:
 	if ghost chef is holding bread:
@@ -420,7 +414,7 @@ every turn:
 			move grilled cheese to player; 
 			move bread to cabinet;
 			move cheese to cabinet;
-			say "'here you go buddy' he says"
+			say "'here's your grilled cheese buddy' he says"
 			
 every turn:
 	if ghost chef is holding hamburger:
@@ -449,14 +443,6 @@ every turn:
 			move jelly burger to player;
 			move hamburger to throne room;
 			move jelly to cabinet
-
-every turn:
-	if ghost chef is holding hamburger:
-		if ghost chef is holding lettuce:
-			move veggie burger to player;
-			move hamburger to throne room;
-			move lettuce to cabinet
-
 [courtyard]
 
 courtyard is east of kitchen. "a large open area in front of the throne room. you can see kobolds swinging their swords at wooden practice dummy. there is one still available if you'd like to practice too. the throne room is to the north."
@@ -469,10 +455,10 @@ instead of asking warrior about something, say "they are all too focused to hear
 
 instead of talking to warrior, say "they are all too focused to hear you." 
 
-instead of attacking warrior: say "as you flail about with your untrained body, you are swarmed by numerous gaurds and taken back to your cell.";
+instead of attacking warrior: say "as you flail about with your untrained body, you are swarmed by numerous guards and taken back to your cell.";
 move player to prison cell; now celldoor is locked; now celldoor is closed; move prisonkey to dungeon
 
-instead of attacking dummy, say "as you wack the dummy with your weapon of choice you hear someone saying 'level up!' from somewhere. you think nothing of it and continue on."
+instead of attacking dummy, say "as you whack the dummy with your weapon of choice you hear someone saying 'level up!' from somewhere. you think nothing of it and continue on."
 
 sentry is a man in courtyard. sentry is undescribed. understand "guard" as sentry. the printed name of sentry is "guard". understand "skeleton" as sentry
 
@@ -492,20 +478,20 @@ ax is in armory. ax is undescribed. understand "axes" as ax. instead of examinin
 
 [throne room]
 
-throne room is north of royal door. "a massive room embelished with banners and statues. Despite the size and grandeur, the room seems rather empty. there is a huge throne on which a person who can only be the demon lord sits."
+throne room is north of royal door. "a massive room embellished with banners and statues. Despite the size and grandeur, the room seems rather empty. there is a huge throne on which a person who can only be the demon lord sits."
 
 royal door is north of courtyard and south of throne room. royal door is a door. understand "door" as royal door. royal door is closed. royal door is scenery. instead of examining royal door, say "a majestic gate leading to the throne room. it's guarded by two skeletons."
 
 instead of opening royal door:
 	if delicacy is held:
 		now royal door is open;
-		say "woah, you have a burger!? the demon lord is going to want to see this. alright you can go in.";
+		say "whoa, you have a burger!? the demon lord is going to want to see this. alright you can go in.";
 	otherwise:
 		say "you are stopped by the two guards. 'the demon lords a busy guy. you can't go in unless it's really important."
 
 meat is in throne room. meat is undescribed. instead of examining meat, say "great for making a sandwich"  
 
-hamburger is in throne room. hamburger is a delicacy. hamburger is undescribed. instead of examining hamburger, say "a delicous fusion of meat, bread, and whatever else you put in here."
+hamburger is in throne room. hamburger is a delicacy. hamburger is undescribed. understand "burger" as hamburger. instead of examining hamburger, say "a delicious fusion of meat, bread, and whatever else you put in here."
 
 banner is in throne room. banner is undescribed. instead of examining banner, say "A blue and black piece of tapestry. it looks really silky."
 
@@ -517,8 +503,6 @@ demon lord is a man in throne room. demon lord is undescribed. understand "demon
 
 instead of talking to demon lord, say "as you try to approach the throne the demon lord shoots you a nasty glare. you choose to back away"
 
-
-
 instead of giving hamburger to demon lord:
 	move hamburger to demon lord;
 	say "'human, this burger is delicious. you have earned the right to one single favor. what is it you desire?' he asks"
@@ -526,6 +510,21 @@ instead of giving hamburger to demon lord:
 instead of asking demon lord about "escape":
 	if demon lord is holding hamburger:
 		say "'very well. i will allow you to return home.' he says";
+		end the story finally
+		
+instead of asking demon lord about "home":
+	if demon lord is holding hamburger:
+		say "'very well. i will allow you to return home.' he says";
+		end the story finally
+		
+instead of asking demon lord about "leaving":
+	if demon lord is holding hamburger:
+		say "'very well. i will allow you to return home.' he says";
+		end the story finally
+		
+instead of asking demon lord about "teleportation":
+	if demon lord is holding hamburger:
+		say "'very well. i will allow you to return home.' he says";		
 		end the story finally
 	
 instead of asking demon lord about something, say "as you try to approach the throne the demon lord shoots you a nasty glare. you choose to back away"
@@ -561,6 +560,6 @@ give bread to ghost chef
 give meat to ghost chef
 e
 n
-give  hamburger to demon lord
+give hamburger to demon lord
 ask demon lord about escape]
 
