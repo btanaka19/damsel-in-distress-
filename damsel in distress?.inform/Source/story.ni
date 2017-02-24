@@ -9,6 +9,8 @@ To say exit list:
 		let place be the room way from the location; 
 		if place is a room, say " [way]". [from get that cat]
 		
+the description of the player is "the royal heir to the kingdom. hard to tell now though. you're clothes are in taters and covered in grime."
+		
 when play begins, say "you are a princess that has been captured by the demon lord for who knows what purpose. your kingdom's valiant knights have made several attempts to rescue you but none have succeeded. it's time to take matters into your own hands."
 
 [prison cell]
@@ -126,7 +128,7 @@ instead of asking guard2 about "grilled cheese", say "'grilled cheese sandwiches
 
 instead of asking guard2 about "norbert", say "'yeah, that guy went crazy a while ago.' he responds"
 
-instead of asking guard2 about "other cell", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"'
+instead of asking guard2 about "other cell", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
 
 instead of asking guard2 about "other prison", say "He just shrugs and says, 'we have to keep our supply up, demon lords orders.'"
 
@@ -261,7 +263,7 @@ instead of asking norbert about something, say "he mumbles something unintelligi
 
 [warden's room]
 
-warden's room is north of dungeon. "what appears to be a typical office space. there is a desk piled high with papers and not much else."
+warden's room is north of dungeon. "what appears to be a typical office space. the walls are made out of wood and painted a light brown. It's almost as if it isn't connected to the dungeon. there is a desk piled high with papers and not much else."
 
 desk is in warden's room. desk is scenery. desk is a supporter. instead of examining desk, say "there is a significant amount of papers piled up on the desk. they appear to be reports of the different prisoners held in the dungeons. there was actually impressive amount of prisoners held here considering there are only two cells."
 
@@ -275,7 +277,7 @@ paper is undescribed.
 	
 [east hallway]
 
-east hallway is east of warden's room. "a plain hallway adorned with pictures connecting the prison to the rest of the castle. the armory is to the north and the warden's room is to the west"
+east hallway is east of warden's room. "a hallway adorned with pictures connecting the prison to the rest of the castle. There is a red carpet floor and yellow walls. the armory is to the north and the warden's room is to the west"
 
 pictures are in east hallway. pictures are undescribed. understand "picture" as pictures. understand "painting" as pictures. understand "paintings" as pictures. 
 
@@ -285,7 +287,7 @@ instead of taking pictures, say "it's too inconvenient  to carry them."
 
 [west hallway]
 
-west hallway is west of warden's room. "a plain hallway connecting the prison to the rest of the castle. the kitchen is to the north and the warden's room is to the east"
+west hallway is west of warden's room. "a hallway connecting the prison to the rest of the castle. There is a red carpet floor and yellow walls. the kitchen is to the north and the warden's room is to the east"
 
 [kitchen]
 
@@ -509,24 +511,26 @@ instead of giving hamburger to demon lord:
 	
 instead of asking demon lord about "escape":
 	if demon lord is holding hamburger:
-		say "'very well. i will allow you to return home.' he says";
+		say "'very well. i will allow you to return home.' he says. you begin to glow and you feel yourself being lifted off your feet. before you know it you're standing in front of your home.";
 		end the story finally
 		
 instead of asking demon lord about "home":
 	if demon lord is holding hamburger:
-		say "'very well. i will allow you to return home.' he says";
+		say "'very well. i will allow you to return home.' he says. you begin to glow and you feel yourself being lifted off your feet. before you know it you're standing in front of your home.";
 		end the story finally
 		
 instead of asking demon lord about "leaving":
 	if demon lord is holding hamburger:
-		say "'very well. i will allow you to return home.' he says";
+		say "'very well. i will allow you to return home.' he says. you begin to glow and you feel yourself being lifted off your feet. before you know it you're standing in front of your home.";
 		end the story finally
 		
 instead of asking demon lord about "teleportation":
 	if demon lord is holding hamburger:
-		say "'very well. i will allow you to return home.' he says";		
+		say "'very well. i will allow you to return home.' he says. you begin to glow and you feel yourself being lifted off your feet. before you know it you're standing in front of your home.";		
 		end the story finally
 	
+
+
 instead of asking demon lord about something, say "as you try to approach the throne the demon lord shoots you a nasty glare. you choose to back away"
 
 [ask guard about grilled cheese
