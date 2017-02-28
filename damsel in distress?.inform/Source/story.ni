@@ -22,7 +22,7 @@ when play begins, say "You are a princess that has been captured by the demon lo
 
 [prison cell]
 
-prison cell is a room. "a dank and musty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east"
+prison cell is a room. "a dank and amusty prison cell. there isn't much to do but look at the scratches on the wall and talk to the guard that's even more bored than you. the rest of the dungeon is to the east"
 
 celldoor is a door. celldoor is east of prison cell and west of west dungeon. celldoor is locked. celldoor is scenery
 
@@ -41,7 +41,7 @@ guard1 is in prison cell. guard1 is undescribed. understand "guard" as guard1. g
 
 instead of switching on guard1, say "That isn't something you can do that to"
 
-instead of examining guard1, say "Your guard appears to be a skeleton. You can't actually tell if it can see without eyes. Or move without muscles. What you can tell is that he has the key you need to get out."
+instead of examining guard1, say "Your guard appears to be a skeleton. You can't actually tell if it can see without eyes. Or move without muscles. What you can tell is that he has the key you need to get out and he seems extremely lonely."
 
 instead of taking guard1, say "He doesn't seem willing"
 
@@ -62,6 +62,16 @@ instead of asking guard1 about "demon lord", say "'He's not too bad actually. he
 
 instead of asking guard1 about "weather", say "'It's been sunny lately. No sign that it's going to change either.' He says"
 
+instead of asking guard1 about "cell", say "'That cell is high quality. Made with rocks and iron bars, there is no escape.' He says"
+
+instead of asking guard1 about "escape", say "'If you want to leave, you need to talk to the demon lord. That being said, I can't just let some random prisoner out. It might be dangerous. ' He says"
+
+instead of asking guard1 about "previous prisoner", say "'There was this one guy here before you. He kind of went crazy and started clawing at the walls. He wasn't always crazy though, so maybe there's something understandable there.' He says"
+
+instead of asking guard1 about "knight", say "'There were a couple of people who came to the castle a while ago, but they were politely sent back home.' He says"
+
+instead of asking guard1 about "knights", say "'There were a couple of people who came to the castle a while ago, but they were politely sent back home.' He says"
+
 instead of asking guard1 about "prison cell", say "'It's just part of being a demon lord i guess. You need a castle to be gloomy in and that castle needs a prison' He says"
 
 instead of asking guard1 about "cell", say "'It's just part of being a demon lord i guess. You need a castle to be gloomy in and that castle needs a prison' He says"
@@ -70,6 +80,9 @@ instead of asking guard1 about "prison", say "'It's just part of being a demon l
 
 instead of asking guard1 about "scratches", say "'Oh, those? Must have been left by the previous prisoners.' He says"
 
+instead of asking guard1 about "meat", say "'We monsters don't actually have much edible meat. We're bad at handling animals too. That's why we have some unique methods of aquiring meat' he responds. "
+
+instead of asking guard1 about "burgers", say "The demon lord loves them, but we don't have the meat needed to make them. They're pretty much a delicacy around here.' he responds"
 
 instead of asking guard1 about "sandwiches":
 	say "I just love sandwiches, how about you?";
@@ -97,6 +110,8 @@ after asking guard1 about something, say "He doesn't seem comfortable talking ab
 
 prisonkey is in dungeon. prisonkey unlocks celldoor. prisonkey is undescribed.  the printed name of prisonkey is "prison key"
 
+understand "key" as prisonkey.
+
 [dungeon]
 
 The description of west dungeon is "It is somehow even smellier here than inside your cell. It turns out that the dungeon is actually really small and plain. Now that you're getting a better look, there is only one other cell besides yours. The only thing you can see is your guard looking quite happy. 'What do you want to talk about, friend?' he asks almost jumping with joy. Your cell is to the west, and you are in front of the other cell."
@@ -108,6 +123,8 @@ every turn:
 guard2 is in dungeon. guard2 is undescribed. understand "guard" as guard2. guard2 is a man in dungeon. the printed name of guard2 is "the guard"
 
 guard2 is holding norbert's key. norbert's key unlocks norbertdoor. norbert's key is undescribed. instead of examining norbert's key, say "An exact replica of the key to your cell, except it unlocks norberts cell."
+
+understand "key" as norbert's key
 
 instead of taking guard2, say "he doesn't seem willing"
 
@@ -144,6 +161,10 @@ instead of asking guard2 about "other prison", say "He just shrugs and says, 'We
 
 instead of asking guard2 about "other prisoner", say "He just shrugs and says, 'We have to keep our supply up, demon lord's orders.'".
 
+instead of asking guard2 about "meat", say "'We monsters don't actually have much edible meat. We're bad at handling animals too. That's why we have some unique methods of aquiring meat' he responds. "
+
+instead of asking guard2 about "burgers", say "The demon lord loves them, but we don't have the meat needed to make them. They're pretty much a delicacy around here.' he responds"
+
 instead of asking guard2 about something, say "He doesn't seem comfortable talking about that. you should try changing the subject."
 
 instead of asking guard2 about "norbert's key", say "'I have it of course' He says"
@@ -163,7 +184,7 @@ every turn:
 
 east dungeon is east of west dungeon
 
-The description of east dungeon is "It is somehow even smellier here than inside your cell. It turns out that the dungeon is actually really small and plain. Now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. 'What do you want to talk about, friend?' He asks almost jumping with joy. Your cell is to the west, the other cell is to the east, and there is another nexit to the north."
+The description of east dungeon is "It is somehow even smellier here than inside your cell. It turns out that the dungeon is actually really small and plain. Now that you're getting a better look, there is only one other cell besides yours. the only thing you can see is your guard looking quite happy. 'What do you want to talk about, friend?' He asks almost jumping with joy. Your cell is to the west, and the other cell is to the east."
 
 every turn:
 	if the player is in west dungeon:
@@ -205,6 +226,10 @@ instead of asking guard3 about "other cell", say "He just shrugs and says, 'We h
 instead of asking guard3 about "other prison", say "He just shrugs and says, 'We have to keep our supply up, demon lords orders.'"
 
 instead of asking guard3 about "other prisoner", say "He just shrugs and says, 'We have to keep our supply up, demon lords orders.'".
+
+instead of asking guard3 about "meat", say "'We monsters don't actually have much edible meat. We're bad at handling animals too. That's why we have some unique methods of aquiring meat' he responds. "
+
+instead of asking guard3 about "burgers", say "The demon lord loves them, but we don't have the meat needed to make them. They're pretty much a delicacy around here.' he responds"
 
 instead of asking guard3 about something, say "He doesn't seem comfortable talking about that. you should try changing the subject."
 
@@ -273,7 +298,7 @@ instead of asking norbert about something, say "He mumbles something unintelligi
 
 [warden's room]
 
-warden's room is north of dungeon. "What appears to be a typical office space. The walls are made out of wood and painted a light brown. It's almost as if it isn't connected to the dungeon. there is a desk piled high with papers and not much else."
+warden's room is north of dungeon. "What appears to be a typical office space. The walls are made out of wood and painted a light brown. It's almost as if it isn't connected to the dungeon. there is a desk piled high with papers and not much else. There are hallways to the east and west."
 
 desk is in warden's room. desk is scenery. desk is a supporter. instead of examining desk, say "There is a significant amount of papers piled up on the desk. They appear to be reports of the different prisoners held in the dungeons. There was actually an impressive amount of prisoners held here considering there are only two cells."
 
@@ -295,15 +320,32 @@ instead of examining pictures, say "After talking to the guard, you were kind of
 
 instead of taking pictures, say "It's too inconvenient to carry them."
 
+carpeteast is in east hallway. carpeteast is undescribed. the printed name of carpeteast is "carpet". understand "carpet" as carpeteast. Instead of taking carpeteast, say "There is simply too much carpet to take."
+
+instead of examining carpeteast, say "A luxurious red carpet. You remember seeing similar carpets in your own castle." 
+
+walleast is in east hallway. walleast is scenery. the printed name of walleast is "wall". understand "wall" as walleast. understand "walls" as walleast. instead of examining walleast, say "Wooden walls painted bright yellow. A bit odd choice of color for a demon lord."
+
+
 [west hallway]
 
 west hallway is west of warden's room. "A hallway connecting the prison to the rest of the castle. There is a red carpet floor and yellow walls. The kitchen is to the north and the warden's room is to the east"
+
+carpetwest is in west hallway. carpetwest is undescribed. the printed name of carpetwest is "carpet". understand "carpet" as carpetwest. Instead of taking carpetwest, say "There is simply too much carpet to take."
+
+instead of examining carpetwest, say "A luxurious red carpet. You remember seeing similar carpets in your own castle." 
+
+wallwest is in west hallway. wallwest is scenery. the printed name of wallwest is "wall". understand "wall" as wallwest. understand "walls" as wallwest. instead of examining wallwest, say "Wooden walls painted bright yellow. A bit odd choice of color for a demon lord."
 
 [kitchen]
 
 kitchen is north of west hallway. "You can see several ghosts here, all making sandwiches. they must really like their sandwiches. There is a cabinet and several tables here as well. the hallway is to the south and the courtyard is to the east"
 
 cabinet is in kitchen. cabinet is closed and openable. cabinet is undescribed. instead of examining cabinet, say "A large, but plain cabinet that holds the supplies needed to run this sandwich making operation. There is a sign on it saying 'put supplies back when done'"
+
+kitchen table is in kitchen. table is scenery. instead of examining table, say "A plain wooden table. Perfect for making sandwiches." 
+
+understand "table" as kitchen table.
 
 bread is inside cabinet. instead of examining bread, say "Great for making a sandwich"
 
@@ -325,6 +367,12 @@ move player to prison cell; now celldoor is locked; now celldoor is closed; move
 instead of talking to ghost chef, say "He listens to what you have to say, then turns back to his work."
 
 instead of asking ghost chef about "sandwiches", say "'I make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!' he responds"
+
+instead of asking ghost chef about "demon lord", say "'His favorite sandwiches are burgers. Any burger will do, as long as it has meat.' he responds"
+
+instead of asking ghost chef about "meat", say "'We monsters don't actually have much edible meat. We suck at handling livestock too. That's why we have special methods of aquiring meat' he responds. "
+
+instead of asking ghost chef about "burgers", say "'We need to make them for the demon lord, but we don't have the meat on hand. They're pretty much a treasure around here.' he responds"
 
 instead of asking ghost chef about "sandwich", say "I make them for a living! bring me the ingredients and i'll make any kind of sandwich you want!"
 
@@ -408,7 +456,7 @@ every turn:
 			move hamburger to player; 
 			move bread to cabinet;
 			move meat to norbert's cell;
-			say "'Here's your burger buddy' He says. 'I can add more to that if you want. just give me back the burger first, then the rest of the ingredients.'"
+			say "'Here's your burger buddy' He says. 'I can add more to that if you want. just give me back the burger first, then the rest of the ingredients.'" [move sandwich to player and reset ingredients]
 			
 every turn:
 	if ghost chef is holding bread:
@@ -457,9 +505,11 @@ every turn:
 			move jelly to cabinet
 [courtyard]
 
-courtyard is east of kitchen. "A large open area in front of the throne room. you can see kobolds swinging their swords at wooden practice dummy. There is one still available if you'd like to practice too. The throne room is to the north."
+courtyard is east of kitchen. "A large open area in front of the throne room. you can see kobolds swinging their swords at wooden practice dummy. There is one still available if you'd like to practice too. The throne room is to the north, the kitchen is to the west, the armory is to the east."
 
-dummy is in court yard. dummy is undescribed. understand "training dummy" as dummy. understand "wooden practice dummy" as dummy. understand "wooden training dummy" as dummy. understand "practice dummy" as dummy. instead of taking dummy, say "it's too heavy"
+dummy is in courtyard. dummy is undescribed. understand "training dummy" as dummy. understand "wooden practice dummy" as dummy. understand "wooden training dummy" as dummy. understand "practice dummy" as dummy. instead of taking dummy, say "it's too heavy"
+
+instead of examining dummy, say "A wooden cross covered with straw. It seems to have been well used, judging by how beat up it is."
 
 warrior is a man in courtyard. understand "kobold" as warrior. warrior is undescribed. the printed name of warrior is "kobold".
 
@@ -497,21 +547,23 @@ royal door is north of courtyard and south of throne room. royal door is a door.
 instead of opening royal door:
 	if delicacy is held:
 		now royal door is open;
-		say "Whoa, you have a burger!? Yhe demon lord is going to want to see this. Alright you can go in.";
+		say "Whoa, you have a burger!? The demon lord is going to want to see this. Alright you can go in.";
 	otherwise:
-		say "You are stopped by the two guards. 'The demon lords a busy guy. You can't go in unless it's really important."
+		say "You are stopped by the two guards. 'The demon lord's a busy guy. You can't go in unless it's really important."
 
 meat is in throne room. meat is undescribed. instead of examining meat, say "Great for making a sandwich"  
 
 hamburger is in throne room. hamburger is a delicacy. hamburger is undescribed. understand "burger" as hamburger. instead of examining hamburger, say "A delicious fusion of meat, bread, and whatever else you put in here."
 
-banner is in throne room. banner is undescribed. instead of examining banner, say "A blue and black piece of tapestry. It looks really silky."
+banner is in throne room. banner is undescribed. instead of examining banner, say "A blue and black piece of tapestry. It looks really silky and expensive."
+
+statue is in throne room. statue is scenery. instead of examining statue, say "A marble sculpture of a knight."  
 
 chair is in throne room. the printed name of chair is "throne". understand "throne" as chair. chair is undescribed. instead of examining chair, say "As you try to approach the throne the demon lord shoots you a nasty glare. You choose to back away"
 
  instead of taking chair, say "As you try to approach the throne the demon lord shoots you a nasty glare. You choose to back away"
 
-demon lord is a man in throne room. demon lord is undescribed. understand "demon" as demon lord. understand "lord" as demon lord.
+demon lord is a man in throne room. demon lord is undescribed. understand "demon" as demon lord. understand "lord" as demon lord. instead of examining demon lord, say "A very, very pale man. He is wearing extremely extravagant clothes and a cape. He really looks like a lord and not very much like a demon." 
 
 instead of talking to demon lord, say "As you try to approach the throne the demon lord shoots you a nasty glare. You choose to back away"
 
@@ -549,28 +601,28 @@ instead of asking demon lord about "home":
 	if demon lord is not holding hamburger:
 		say "As you try to approach the throne the demon lord shoots you a nasty glare. You choose to back away";
 	otherwise:
-		say "'Very well. i will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
+		say "'Very well. I will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
 		end the story finally;
 		
 instead of asking demon lord about "home":
 	if demon lord is not holding hamburger:
 		say "As you try to approach the throne the demon lord shoots you a nasty glare. You choose to back away";
 	otherwise:
-		say "'Very well. i will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
+		say "'Very well. I will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
 		end the story finally;
 		
 instead of asking demon lord about "leaving":
 	if demon lord is not holding hamburger:
 		say "As you try to approach the throne the demon lord shoots you a nasty glare. You choose to back away";
 	otherwise:
-		say "'Very well. i will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
+		say "'Very well. I will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
 		end the story finally
 				
 instead of asking demon lord about "teleportation":
 	if demon lord is not holding hamburger:
 		say "As you try to approach the throne the demon lord shoots you a nasty glare. You choose to back away";
 	otherwise:
-		say "'Very well. i will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
+		say "'Very well. I will allow you to return home.' He says. You begin to glow and you feel yourself being lifted off your feet. Before you know it you're standing in front of your home.";		
 		end the story finally
 		
 
