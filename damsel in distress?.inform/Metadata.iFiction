@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>261AFAEB-A07C-4175-B5ED-A2167D9C368D</ifid>
+            <format>glulx</format>
+        </identification>
+        <bibliographic>
+            <title>damsel in distress?</title>
+            <author>Brycen Tanaka the release number is 1 the story creation year is 2017 The story headline is 'A semi typical princess story'</author>
+            <headline>An Interactive Fiction</headline>
+            <genre>Adventure</genre>
+            <firstpublished>2017</firstpublished>
+            <description>A princess is stuck in a castle and needs to get out. Fortunately the inhabitants aren't completely unwilling to help. Can you escape?</description>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2017-02-27</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>6M62</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>6M62</generatorversion>
+            <originated>2017-02-27</originated>
+        </colophon>
+        <glulx>
+            <serial>170227</serial>
+            <release>1</release>
+            <compiler>Inform 7 build 6M62</compiler>
+        </glulx>
+    </story>
+</ifindex>

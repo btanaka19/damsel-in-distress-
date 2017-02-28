@@ -1,0 +1,58 @@
+! Blurb file created by Inform build 6M62
+
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.inform"
+release to "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "damsel in distress.gblorb"
+storyfile "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.inform/Build/output.ulx" include
+ifiction "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.inform/Metadata.iFiction" include
+cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+release file "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
+release file "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Small Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "261AFAEB-A07C-4175-B5ED-A2167D9C368D"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2017"
+placeholder [TITLE] = "damsel in distress?"
+placeholder [AUTHOR] = "Brycen Tanaka the release number is 1 the story creation year is 2017 The story headline is 'A semi typical princess story'"
+placeholder [BLURB] = "A princess is stuck in a castle and needs to get out. Fortunately the inhabitants aren't completely unwilling to help. Can you escape?"
+
+! Other material to release
+
+ifiction
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "damsel in distress.gblorb.js"
+template path "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.materials/Templates"
+template path "/Users/btanaka19/Library/Inform/Templates"
+template path "/Applications/Inform.app/Contents/Resources/Internal/Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.inform/Build/output.ulx" to "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.materials/Release/interpreter/damsel in distress.gblorb.js"
+
+! Website instructions
+
+template path "/Users/btanaka19/Desktop/comp sci/damsel-in-distress-/damsel in distress?.materials/Templates"
+template path "/Users/btanaka19/Library/Inform/Templates"
+template path "/Applications/Inform.app/Contents/Resources/Internal/Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line7"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line8"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
